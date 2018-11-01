@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+
+
+
+message ProtobufControl{
+message Servos{
+     int32 xAngle = 1;
+     int32 yAngle = 2;
+}
+
+message Motors{
+     int32 lPower = 1;
+     int32 lTime = 2;
+     int32 rPower = 3;
+     int32 rTime = 4;
+}
+
+message Light{
+     int32 ledPower = 1;
+     bool xenonEnable = 2;
+}
+
+message Vibro{
+     int32 Power = 1;
+     int32 Time = 2;
+}
+
+message System{
+     bool haltFlag = 1;
+     bool restartFlag = 2;
+}
+
+   Servos servos = 1;
+   Motors motors = 2;
+   Light light = 3;
+   Vibro vibro = 4;
+   System system = 5;
+
+}

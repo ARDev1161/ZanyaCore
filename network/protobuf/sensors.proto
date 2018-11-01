@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+message ProtobufSensors{
+   message Accelerometer{
+	float x = 1;
+	float y = 2;
+	float z = 3;
+   }
+
+   message Gyroscope{
+	float x = 1;
+	float y = 2;
+	float z = 3;	
+   }
+
+   message MotorEncoders{
+	int32 lAngle = 1;
+	int32 rAngle = 2;
+   }
+
+   message Temperature{
+	int32 tempAccelerometer = 1;
+	int32 tempCPU = 2;
+	int32 tempPressure = 3;
+   }
+
+   message Misc{
+	int32 gas = 1;
+	int32 batteryVoltage = 2;
+	float pressure = 3;
+   }
+
+   Accelerometer accelerometer = 1;
+   Gyroscope gyroscope = 2;
+   MotorEncoders motorEncoders = 3;
+   Temperature temperature = 4;
+   Misc misc = 5;
+
+}
+

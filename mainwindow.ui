@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>341</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>334</width>
+    <height>280</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="minimumSize">
+    <size>
+     <width>680</width>
+     <height>540</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::AlignLeft|Qt::AlignTop">
+     <widget class="QLabel" name="OutLabel">
+      <property name="minimumSize">
+       <size>
+        <width>320</width>
+        <height>240</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Camera not opened</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>341</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDevices">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="action_Joystick"/>
+   </widget>
+   <widget class="QMenu" name="menu_Zanya">
+    <property name="title">
+     <string>&amp;Zanya</string>
+    </property>
+    <addaction name="action_Connect"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="action_Move"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="action_Reboot"/>
+    <addaction name="action_Halt"/>
+   </widget>
+   <addaction name="menuDevices"/>
+   <addaction name="menu_Zanya"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="action_Connect">
+   <property name="text">
+    <string>&amp;Connect</string>
+   </property>
+  </action>
+  <action name="action_Move">
+   <property name="text">
+    <string>&amp;Move</string>
+   </property>
+  </action>
+  <action name="action_Halt">
+   <property name="text">
+    <string>&amp;Halt</string>
+   </property>
+  </action>
+  <action name="action_Reboot">
+   <property name="text">
+    <string>&amp;Reboot</string>
+   </property>
+  </action>
+  <action name="actionmy">
+   <property name="text">
+    <string>my</string>
+   </property>
+  </action>
+  <action name="action_Joystick">
+   <property name="text">
+    <string>Set &amp;Joystick</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
