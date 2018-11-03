@@ -115,4 +115,5 @@ LIBS += -lprotobuf \
 
 DISTFILES += \
         network/protobuf/control.proto \
-        network/protobuf/sensors.proto
+        network/protobuf/sensors.proto \
+    README.md
