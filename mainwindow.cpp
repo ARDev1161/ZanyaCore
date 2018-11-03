@@ -62,8 +62,6 @@ void MainWindow::worker()
     cv::resize(sourceMat, sourceMat, Size(320, 240));
     outMat(sourceMat);
     undistortMat();
-
-    qDebug() << zanyaControl->getXAngle() << "\t" << zanyaControl->getYAngle() << endl;
 }
 
 void MainWindow::undistortMat(/*Mat &inMat, Mat &outMat*/)
