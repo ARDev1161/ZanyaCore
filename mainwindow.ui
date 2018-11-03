@@ -64,6 +64,12 @@
     <property name="title">
      <string>&amp;Zanya</string>
     </property>
+    <widget class="QMenu" name="menuCalibrate">
+     <property name="title">
+      <string>Calibrate</string>
+     </property>
+     <addaction name="actionCamera"/>
+    </widget>
     <addaction name="action_Connect"/>
     <addaction name="separator"/>
     <addaction name="separator"/>
@@ -72,6 +78,7 @@
     <addaction name="separator"/>
     <addaction name="action_Reboot"/>
     <addaction name="action_Halt"/>
+    <addaction name="menuCalibrate"/>
    </widget>
    <addaction name="menuDevices"/>
    <addaction name="menu_Zanya"/>
@@ -110,6 +117,11 @@
   <action name="action_Joystick">
    <property name="text">
     <string>Set &amp;Joystick</string>
+   </property>
+  </action>
+  <action name="actionCamera">
+   <property name="text">
+    <string>Camera</string>
    </property>
   </action>
  </widget>

@@ -33,6 +33,7 @@
 #include "control/control.h"
 #include "sensors/sensors.h"
 #include "network/TCP/tcp.h"
+#include "camcalibrate.h"
 
 using namespace cv;
 using namespace std;
@@ -50,7 +51,7 @@ class MainWindow : public QMainWindow
 
     Ui::MainWindow *ui;
     VideoCapture capture;
-    Mat Src;
+    Mat sourceMat;
 
     Control *zanyaControl;
     Sensors *zanyaSensors;
@@ -67,17 +68,18 @@ class MainWindow : public QMainWindow
 
     void startCap();
     void startTimer();
-    void Worker();
+    void worker();
     void outMat(Mat&);
-    void connJoy();
+    void connMenu();
     void undistortMat();
 
 signals:
     void timeout();
 
 private slots:
-    void FrameUpdate();
-    void MenuJoystick();
+    void calibDialogOpen();
+    void frameUpdate();
+    void menuJoystick();
     void fetchJoystickId();
 
 public:

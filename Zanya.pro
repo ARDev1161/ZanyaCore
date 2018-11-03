@@ -50,8 +50,8 @@ SOURCES += \
         network/TCP/tcp.cpp \
         network/protobuf/control.pb.cc \
         network/protobuf/sensors.pb.cc \
-    network/ssl/SslServer.cpp \
-    camcalibrate.cpp
+        network/ssl/SslServer.cpp \
+        camcalibrate.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -79,13 +79,13 @@ HEADERS += \
         network/TCP/tcp.h \
         network/protobuf/control.pb.h \
         network/protobuf/sensors.pb.h \
-    network/ssl/SslServer.h \
-    camcalibrate.h
+        network/ssl/SslServer.h \
+        camcalibrate.h
 
 FORMS += \
         mainwindow.ui \
         joystick/joystickdialog.ui \
-    camcalibrate.ui
+        camcalibrate.ui
 
 INCLUDEPATH += /usr/local/include/opencv4/
 

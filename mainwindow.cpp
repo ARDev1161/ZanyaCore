@@ -13,22 +13,22 @@ MainWindow::MainWindow(QWidget *parent) :
     joystickDialog = new JoystickDialog(idHolder, this);
     connect(joystickDialog, &JoystickDialog::accepted, this, &MainWindow::fetchJoystickId);
 
-    connJoy();
+    connMenu();
     startCap();
     startTimer();
+
 }
 
 MainWindow::~MainWindow()
 {
-    delete ui;
     capture.release();
-    SDL_Quit();
+    delete ui;
 }
 
-void MainWindow::FrameUpdate()
+void MainWindow::frameUpdate()
 {
-    if(capture.read(Src)){
-        Worker();
+    if(capture.read(sourceMat)){
+        worker();
     }
 }
 
@@ -39,13 +39,14 @@ void MainWindow::startCap()
     if(!capture.isOpened()){
         return;
     }
-    FrameUpdate();
+    frameUpdate();
 }
 
 void MainWindow::startTimer()
 {
     tmrTimer = new QTimer(this);
-    connect(tmrTimer,SIGNAL(timeout()),this,SLOT(FrameUpdate()));
+    connect(tmrTimer,SIGNAL(timeout()),this,SLOT(frameUpdate()));
+    connect(tmrTimer, &QTimer::timeout, this, &MainWindow::timeout);
     tmrTimer->start(LoopTime); //msec
 }
 
@@ -55,11 +56,11 @@ void MainWindow::outMat(Mat &ToOut)
     ui->OutLabel->setPixmap(QPixmap::fromImage(qimgOut));
 }
 
-void MainWindow::Worker()
+void MainWindow::worker()
 {
-    flip(Src, Src, 1);
-    cv::resize(Src, Src, Size(320, 240));
-    outMat(Src);
+    flip(sourceMat, sourceMat, 1);
+    cv::resize(sourceMat, sourceMat, Size(320, 240));
+    outMat(sourceMat);
     undistortMat();
 
     qDebug() << zanyaControl->getXAngle() << "\t" << zanyaControl->getYAngle() << endl;
@@ -70,7 +71,16 @@ void MainWindow::undistortMat(/*Mat &inMat, Mat &outMat*/)
 
 }
 
-void MainWindow::MenuJoystick()
+void MainWindow::calibDialogOpen()
+{
+    CamCalibrate *calibDialog;
+    calibDialog = new CamCalibrate(&sourceMat, this);
+    connect(this, &MainWindow::timeout, calibDialog, &CamCalibrate::frameUpdate);
+    connect(calibDialog, &CamCalibrate::finished, calibDialog, &CamCalibrate::deleteLater);
+    calibDialog->exec();
+}
+
+void MainWindow::menuJoystick()
 {
     joystickDialog->exec();
 }
@@ -91,7 +101,8 @@ void MainWindow::fetchJoystickId()
 
 }
 
-void MainWindow::connJoy()
+void MainWindow::connMenu()
 {
-    connect(ui->action_Joystick, SIGNAL(triggered()), this, SLOT(MenuJoystick()));
+    connect(ui->actionCamera, SIGNAL(triggered()), this, SLOT(calibDialogOpen()));
+    connect(ui->action_Joystick, SIGNAL(triggered()), this, SLOT(menuJoystick()));
 }
