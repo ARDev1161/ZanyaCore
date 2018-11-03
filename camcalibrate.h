@@ -16,6 +16,11 @@ class CamCalibrate : public QDialog
 
     Mat *sourceMat;
 
+    int numBoards = 0;
+    int numCornersHor;
+    int numCornersVer;
+    int numSquares;
+
 public:
     explicit CamCalibrate(Mat *source, QWidget *parent = 0);
     ~CamCalibrate();
