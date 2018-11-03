@@ -30,7 +30,7 @@ private:
     int joyId;
 
     enum { MAX_JOYSTICK_BUTTONS = 30 };
-    \
+
     void setDefaultText();
     void setAvaliableJoystick();
 
