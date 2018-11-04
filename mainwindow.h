@@ -22,6 +22,8 @@
 #undef main
 #include "pch.h"
 
+#define NO_PICTURE "./data/images/no_picture.jpeg"
+
 using namespace cv;
 using namespace std;
 
@@ -33,16 +35,23 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
+    Ui::MainWindow *ui;
+
     QTimer *tmrTimer;
     QString *hostName;
 
-    Ui::MainWindow *ui;
     VideoCapture capture;
     Mat sourceMat;
+    Mat outputMat;
+
+    Mat distCoeffs;
+    Mat intrinsic;
 
     Control *zanyaControl;
     Sensors *zanyaSensors;
     Logic *zanyaLogic;
+
+    CamSettingsHolder *camHolder;
 
     JoystickDialog *joystickDialog;
     JoystickIdHolder *idHolder;
@@ -50,15 +59,7 @@ class MainWindow : public QMainWindow
     Joystick *joyThread;
     TCP *tcpThread;
 
-
     int LoopTime=50;
-
-    void startCap();
-    void startTimer();
-    void worker();
-    void outMat(Mat&);
-    void connMenu();
-    void undistortMat();
 
 signals:
     void timeout();
@@ -72,6 +73,15 @@ private slots:
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+private:
+    void startCap();
+    void startTimer();
+    void worker();
+    void outMat(Mat &toOut);
+    void connMenu();
+    void undistortMat(Mat &inMat, Mat &outMat);
+    void initFields();
 
 };
 

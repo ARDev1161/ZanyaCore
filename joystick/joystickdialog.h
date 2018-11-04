@@ -33,6 +33,8 @@ private:
 
     void setDefaultText();
     void setAvaliableJoystick();
+    void initFields();
+    void connMenu();
 
 private slots:
     void connectToJoystick();

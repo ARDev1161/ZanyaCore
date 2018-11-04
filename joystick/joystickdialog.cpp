@@ -3,25 +3,14 @@
 
 JoystickDialog::JoystickDialog(JoystickIdHolder *idHolder, QWidget *parent) :
     QDialog(parent),
-    joyAdapter(0),
-    buttonVector(QVector<bool>(MAX_JOYSTICK_BUTTONS)),
     ui(new Ui::JoystickDialog)
 {
     ui->setupUi(this);
 
-    connect(ui->connectPushButton, SIGNAL(clicked()), this, SLOT(connectToJoystick()));
-    connect(ui->disconnectPushButton, SIGNAL(clicked()), this, SLOT(disconnectFromJoystick()));
-    connect(ui->rescanPushButton, SIGNAL(clicked()), this, SLOT(rescanJoystickDevice()));
-
     this->idHolder = idHolder;
 
-    buttonVector.fill(false);
-
-    ui->joystickStateBox->setDisabled(true);
-    ui->joystickInformationBox->setDisabled(true);
-    ui->disconnectPushButton->setDisabled(true);
-
-   joyAdapter = new VJoystickAdapter(this);
+    initFields();
+    connMenu();
 
     setAvaliableJoystick();
     setDefaultText();
@@ -33,6 +22,25 @@ JoystickDialog::~JoystickDialog()
     disconnectFromJoystick();
     delete ui;
     delete joyAdapter;
+}
+
+void JoystickDialog::initFields()
+{
+    joyAdapter = new VJoystickAdapter(0);
+    buttonVector = QVector<bool>(MAX_JOYSTICK_BUTTONS);
+
+    buttonVector.fill(false);
+
+    ui->joystickStateBox->setDisabled(true);
+    ui->joystickInformationBox->setDisabled(true);
+    ui->disconnectPushButton->setDisabled(true);
+}
+
+void JoystickDialog::connMenu()
+{
+    connect(ui->connectPushButton, SIGNAL(clicked()), this, SLOT(connectToJoystick()));
+    connect(ui->disconnectPushButton, SIGNAL(clicked()), this, SLOT(disconnectFromJoystick()));
+    connect(ui->rescanPushButton, SIGNAL(clicked()), this, SLOT(rescanJoystickDevice()));
 }
 
 void JoystickDialog::setDefaultText()

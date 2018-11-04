@@ -2,7 +2,7 @@
 #define CAMCALIBRATE_H
 
 #include <QDialog>
-#include <opencv2/opencv.hpp>
+#include "camera/camsettingsholder.h"
 
 using namespace cv;
 using namespace std;
@@ -18,35 +18,39 @@ class CamCalibrate : public QDialog
 
     bool started = false;
 
-    int numBoards = 0;
     int numCornersHor;
     int numCornersVer;
     int numSquares;
 
     int successes=0;
 
-    Size board_sz;
+    Ui::CamCalibrate *ui;
 
-    vector<Point2f> *corners;
+    CamSettingsHolder *camHolder;
+
+    vector<Point2f> corners;
 
     vector<vector<Point2f>> image_points;
     vector<vector<Point3f>> object_points;
 
-    vector<Point3f> *obj;
+    vector<Point3f> obj;
 
     vector<Mat> rvecs;
     vector<Mat> tvecs;
 
+    Size boardSize;
+
     Mat *sourceMat;
+
     Mat gray;
+    Mat out;
 
     Mat distCoeffs;
     Mat intrinsic;
 
-    Ui::CamCalibrate *ui;
 
 public:
-    explicit CamCalibrate(Mat *source, QWidget *parent = 0);
+    explicit CamCalibrate(Mat *source, CamSettingsHolder *holder, QWidget *parent = 0);
     ~CamCalibrate();
 
 public slots:
@@ -56,6 +60,7 @@ private slots:
     void on_buttonBox_accepted();
     void on_buttonBox_rejected();
     void on_pushButton_clicked();
+
 
 private:
     void outMat(Mat &ToOut);

@@ -7,22 +7,32 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    zanyaControl = new Control();
-
-    idHolder = new JoystickIdHolder();
-    joystickDialog = new JoystickDialog(idHolder, this);
-    connect(joystickDialog, &JoystickDialog::accepted, this, &MainWindow::fetchJoystickId);
-
+    initFields();
     connMenu();
-    startCap();
-    startTimer();
 
+    startTimer();
+    startCap();
 }
 
 MainWindow::~MainWindow()
 {
     capture.release();
     delete ui;
+}
+
+void MainWindow::initFields()
+{
+    sourceMat = imread(NO_PICTURE);
+    outputMat = sourceMat;
+
+    zanyaControl = new Control();
+
+    camHolder = new CamSettingsHolder();
+
+    idHolder = new JoystickIdHolder();
+    joystickDialog = new JoystickDialog(idHolder, this);
+
+    connect(joystickDialog, &JoystickDialog::accepted, this, &MainWindow::fetchJoystickId);
 }
 
 void MainWindow::frameUpdate()
@@ -34,11 +44,11 @@ void MainWindow::frameUpdate()
 
 void MainWindow::startCap()
 {
-    capture.open(0); //"udpsrc port=1488 ! application/x-rtp, encoding-name=H264 ! "
-                  //"rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! appsink");
-    if(!capture.isOpened()){
+    capture.open("udpsrc port=1488 ! application/x-rtp, encoding-name=H264 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! appsink");
+
+    if(!capture.isOpened())
         return;
-    }
+
     frameUpdate();
 }
 
@@ -50,9 +60,9 @@ void MainWindow::startTimer()
     tmrTimer->start(LoopTime); //msec
 }
 
-void MainWindow::outMat(Mat &ToOut)
+void MainWindow::outMat(Mat &toOut)
 {
-    QImage qimgOut((uchar*) ToOut.data, ToOut.cols, ToOut.rows, ToOut.step,QImage::Format_RGB888);
+    QImage qimgOut((uchar*) toOut.data, toOut.cols, toOut.rows, toOut.step,QImage::Format_RGB888);
     ui->OutLabel->setPixmap(QPixmap::fromImage(qimgOut));
 }
 
@@ -60,21 +70,31 @@ void MainWindow::worker()
 {
     flip(sourceMat, sourceMat, 1);
     cv::resize(sourceMat, sourceMat, Size(320, 240));
-    outMat(sourceMat);
-    undistortMat();
+
+    undistortMat(sourceMat, outputMat);
+
+    outMat(outputMat);
 }
 
-void MainWindow::undistortMat(/*Mat &inMat, Mat &outMat*/)
+void MainWindow::undistortMat(Mat &inMat, Mat &outMat)
 {
+    if(camHolder->getReady()){
+        cvtColor(inMat, inMat, COLOR_BGR2GRAY);
 
+        undistort(inMat, outMat, camHolder->getIntrinsic(), camHolder->getDistCoeffs());
+    }
+    else
+        outMat = inMat;
 }
 
 void MainWindow::calibDialogOpen()
 {
     CamCalibrate *calibDialog;
-    calibDialog = new CamCalibrate(&sourceMat, this);
+    calibDialog = new CamCalibrate(&sourceMat, camHolder, this);
+
     connect(this, &MainWindow::timeout, calibDialog, &CamCalibrate::frameUpdate);
     connect(calibDialog, &CamCalibrate::finished, calibDialog, &CamCalibrate::deleteLater);
+
     calibDialog->exec();
 }
 

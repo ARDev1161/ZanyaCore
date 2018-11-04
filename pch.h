@@ -5,11 +5,8 @@
 #ifdef __cplusplus
 // add C++ includes here
 
-#include <QtCore/QDebug>
 #include <QMainWindow>
 #include <QTimer>
-#include <QVariant>
-#include <SDL/SDL.h>
 
 #include <opencv2/opencv.hpp>
 
@@ -18,6 +15,7 @@
 #include "control/control.h"
 #include "sensors/sensors.h"
 #include "network/TCP/tcp.h"
-#include "camcalibrate.h"
+#include "camera/camcalibrate.h"
+#include "camera/camsettingsholder.h"
 
 #endif // __cplusplus

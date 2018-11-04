@@ -50,9 +50,14 @@ SOURCES += \
         network/protobuf/control.pb.cc \
         network/protobuf/sensors.pb.cc \
         network/ssl/SslServer.cpp \
-        camcalibrate.cpp
+        camera/camcalibrate.cpp \
+        camera/camsettingsholder.cpp
+
+CONFIG += precompile_header
+PRECOMPILED_HEADER = pch.h
 
 HEADERS += \
+        pch.h \
         mainwindow.h \
         logic/logic.h \
         joystick/v_joystick_adapter.h \
@@ -79,16 +84,13 @@ HEADERS += \
         network/protobuf/control.pb.h \
         network/protobuf/sensors.pb.h \
         network/ssl/SslServer.h \
-        camcalibrate.h \
-        pch.h
-
-CONFIG += precompile_header
-PRECOMPILED_HEADER = pch.h
+        camera/camcalibrate.h \
+        camera/camsettingsholder.h
 
 FORMS += \
         mainwindow.ui \
         joystick/joystickdialog.ui \
-        camcalibrate.ui
+        camera/camcalibrate.ui
 
 INCLUDEPATH += /usr/local/include/opencv4/
 
@@ -119,4 +121,8 @@ LIBS += -lprotobuf \
 DISTFILES += \
         network/protobuf/control.proto \
         network/protobuf/sensors.proto \
-    README.md
+        README.md \
+        data/images/no_picture.jpeg
+
+SUBDIRS += \
+        Zanya.pro

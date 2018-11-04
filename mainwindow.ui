@@ -36,7 +36,7 @@
        </size>
       </property>
       <property name="text">
-       <string>Camera not opened</string>
+       <string>Capture not opened</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
