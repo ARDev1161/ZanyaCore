@@ -8,18 +8,16 @@ class Joystick: public QObject
 {
     Q_OBJECT
 
+    int joyId;
+
+    Control *zanyaControl;
+
 public:
     Joystick(int id, Control *control);
     ~Joystick();
 
     void addThread();
     void stopThreads();
-
-
-private:
-    int joyId;
-
-    Control *zanyaControl;
 
 signals:
     void stopAll(); //остановка всех потоков

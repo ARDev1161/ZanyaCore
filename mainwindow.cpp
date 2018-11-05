@@ -44,7 +44,7 @@ void MainWindow::frameUpdate()
 
 void MainWindow::startCap()
 {
-    capture.open("udpsrc port=1488 ! application/x-rtp, encoding-name=H264 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! appsink");
+    capture.open(SOURCE_STREAM);
 
     if(!capture.isOpened())
         return;
@@ -73,16 +73,16 @@ void MainWindow::worker()
 
     undistortMat(sourceMat, outputMat);
 
+    zanyaLogic->setSrcMat(&outputMat);
+    outputMat = zanyaLogic->getOutMat();
+
     outMat(outputMat);
 }
 
 void MainWindow::undistortMat(Mat &inMat, Mat &outMat)
 {
-    if(camHolder->getReady()){
-        cvtColor(inMat, inMat, COLOR_BGR2GRAY);
-
-        undistort(inMat, outMat, camHolder->getIntrinsic(), camHolder->getDistCoeffs());
-    }
+    if(camHolder->getReady())
+        outMat = camHolder->remap(inMat);
     else
         outMat = inMat;
 }
@@ -95,6 +95,7 @@ void MainWindow::calibDialogOpen()
     connect(this, &MainWindow::timeout, calibDialog, &CamCalibrate::frameUpdate);
     connect(calibDialog, &CamCalibrate::finished, calibDialog, &CamCalibrate::deleteLater);
 
+    if(camHolder->getReady())camHolder->setReady(false);
     calibDialog->exec();
 }
 

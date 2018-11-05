@@ -2,7 +2,10 @@
 #define CAMCALIBRATE_H
 
 #include <QDialog>
-#include "camera/camsettingsholder.h"
+#include "camsettingsholder.h"
+#include "calibrator.h"
+
+#define COUNT_SKIP_FRAMES 7
 
 using namespace cv;
 using namespace std;
@@ -15,38 +18,37 @@ class CamCalibrate : public QDialog
 {
     Q_OBJECT
 
+    Ui::CamCalibrate *ui;
 
     bool started = false;
+
+    int pauseForChangePosition = 0;
 
     int numCornersHor;
     int numCornersVer;
     int numSquares;
 
-    int successes=0;
-
-    Ui::CamCalibrate *ui;
+    int successes = 0;
 
     CamSettingsHolder *camHolder;
+    Calibrator *camCalib;
 
-    vector<Point2f> corners;
+    //input points:
+    vector<Point3f> objectCorners;
+    vector<Point2f> imageCorners;
 
-    vector<vector<Point2f>> image_points;
-    vector<vector<Point3f>> object_points;
-
-    vector<Point3f> obj;
-
-    vector<Mat> rvecs;
-    vector<Mat> tvecs;
+    vector<vector<Point3f>> objectPoints; // real world 3D coordinates
+    vector<vector<Point2f>> imagePoints; // 2D coordinates (pixel values)
 
     Size boardSize;
 
     Mat *sourceMat;
 
+    Mat graySaved;
     Mat gray;
     Mat out;
 
     Mat distCoeffs;
-    Mat intrinsic;
 
 
 public:

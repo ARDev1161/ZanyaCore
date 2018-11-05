@@ -23,6 +23,8 @@
 #include "pch.h"
 
 #define NO_PICTURE "./data/images/no_picture.jpeg"
+#define SOURCE_STREAM 0
+//#define SOURCE_STREAM "udpsrc port=1488 ! application/x-rtp, encoding-name=H264 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! appsink"
 
 using namespace cv;
 using namespace std;
@@ -43,9 +45,6 @@ class MainWindow : public QMainWindow
     VideoCapture capture;
     Mat sourceMat;
     Mat outputMat;
-
-    Mat distCoeffs;
-    Mat intrinsic;
 
     Control *zanyaControl;
     Sensors *zanyaSensors;

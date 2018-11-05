@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Joystick</string>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
@@ -39,7 +39,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>Joystick selection and info</string>
+    <string>Selection and info</string>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_18">
     <item>

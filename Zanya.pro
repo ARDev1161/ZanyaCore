@@ -51,7 +51,11 @@ SOURCES += \
         network/protobuf/sensors.pb.cc \
         network/ssl/SslServer.cpp \
         camera/camcalibrate.cpp \
-        camera/camsettingsholder.cpp
+        camera/camsettingsholder.cpp \
+        camera/calibrator.cpp \
+        camera/calibratorworker.cpp \
+        threads/session.cpp \
+        threads/worker.cpp
 
 CONFIG += precompile_header
 PRECOMPILED_HEADER = pch.h
@@ -85,7 +89,11 @@ HEADERS += \
         network/protobuf/sensors.pb.h \
         network/ssl/SslServer.h \
         camera/camcalibrate.h \
-        camera/camsettingsholder.h
+        camera/camsettingsholder.h \
+        camera/calibrator.h \
+        camera/calibratorworker.h \
+        threads/session.h \
+        threads/worker.h
 
 FORMS += \
         mainwindow.ui \

@@ -8,12 +8,14 @@ CamCalibrate::CamCalibrate(Mat *source, CamSettingsHolder *holder, QWidget *pare
     ui->setupUi(this);
 
     camHolder = holder;
+    camHolder->setFlag(0);
     sourceMat = source;
 }
 
 CamCalibrate::~CamCalibrate()
 {
-    delete ui;
+    if(this->ui)
+        delete this->ui;
 }
 
 void CamCalibrate::outMat(Mat &ToOut)
@@ -24,19 +26,25 @@ void CamCalibrate::outMat(Mat &ToOut)
 
 void CamCalibrate::initFields()
 {
-    numCornersHor = ui->spinHorizontal->value();
-    numCornersVer = ui->spinVertical->value();
+    Size imageSize;
+    imageSize.width = ui->OutLabel->width();
+    imageSize.height = ui->OutLabel->height();
+    camHolder->setImageSize(imageSize);
 
-    numSquares = numCornersHor * numCornersVer;
-    boardSize = Size(numCornersHor, numCornersVer);
+    boardSize.width = ui->spinHorizontal->value();
+    boardSize.height = ui->spinVertical->value();
 
-    intrinsic = Mat(3, 3, CV_32FC1);
-    intrinsic.ptr<float>(0)[0] = 1;
-    intrinsic.ptr<float>(1)[1] = 1;
+    Mat cameraMatrix ;
+    cameraMatrix = Mat(3, 3, CV_32FC1);
+    cameraMatrix.ptr<float>(0)[0] = 1;
+    cameraMatrix.ptr<float>(1)[1] = 1;
+    camHolder->setCameraMatrix(cameraMatrix);
 
-
-    for(int j=0; j < numSquares; j++)
-            obj.push_back(Point3f(j / numCornersHor, j % numCornersHor, 0.0f));
+    // Initialize the chessboard corners in the chessboard reference frame.
+    // The corners are at 3D location (X,Y,Z)= (i,j,0)
+    for (int i=0; i<boardSize.height; i++)
+        for (int j=0; j<boardSize.width; j++)
+            objectCorners.push_back(Point3f(i, j, 0.0f));
 
     started = true;
 }
@@ -45,22 +53,28 @@ void CamCalibrate::getCalibInfo()
 {
         cvtColor(*sourceMat, gray, COLOR_BGR2GRAY);
 
-        bool found = findChessboardCorners(gray, boardSize, corners, CALIB_CB_ADAPTIVE_THRESH | CALIB_CB_NORMALIZE_IMAGE | CALIB_CB_FILTER_QUADS | CALIB_CB_FAST_CHECK);
-        if(found){
-            cornerSubPix(gray, corners, Size(11, 11), Size(-1, -1), TermCriteria(TermCriteria::EPS | TermCriteria::MAX_ITER, 30, 0.1));
+        bool found = findChessboardCorners(gray, boardSize, imageCorners);
 
-            drawChessboardCorners(*sourceMat, boardSize, corners, found);
+        if(found )
+        {
+            cornerSubPix(gray, imageCorners, Size(7, 7), Size(-1, -1), TermCriteria(TermCriteria::EPS | TermCriteria::MAX_ITER, 30, 0.1));
 
-            image_points.push_back(corners);
-            object_points.push_back(obj);
+            drawChessboardCorners(*sourceMat, camHolder->getImageSize(), imageCorners, found);
+
+            imshow("out", *sourceMat);
+            objectPoints.push_back(objectCorners);
+            imagePoints.push_back(imageCorners);
 
             successes++;
+            if(ui)
+                ui->labelSuccessed->setText(QString::number(successes));
 
-            calibrateCamera(object_points, image_points, gray.size(), intrinsic, distCoeffs, rvecs, tvecs);
+            pauseForChangePosition = 0;
+         }
 
-            camHolder->setDistCoeffs(distCoeffs);
-            camHolder->setIntrinsic(intrinsic);
-        }
+        pauseForChangePosition++;
+        if(successes > 20)
+            this->accept();
 }
 
 void CamCalibrate::frameUpdate()
@@ -80,10 +94,16 @@ void CamCalibrate::on_pushButton_clicked()
 
 void CamCalibrate::on_buttonBox_accepted()
 {
-        camHolder->setReady(true);
+    if(!imagePoints.empty()){
+        camHolder->setObjectPoints(objectPoints);
+        camHolder->setImagePoints(imagePoints);
+
+        camCalib = new Calibrator(camHolder);
+        camCalib->addThread();
+    }
 }
 
 void CamCalibrate::on_buttonBox_rejected()
 {
-
+    this->close();
 }
