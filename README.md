@@ -1,2 +1,2 @@
-# Zanya
-This is application for communicate robot on RPi base.
+# Zanya Core
+This is application for communicate with robot on RPi base.
