@@ -14,7 +14,8 @@
 #include "joystick/joystick.h"
 #include "control/control.h"
 #include "sensors/sensors.h"
-#include "network/TCP/tcp.h"
+#include "network/tcp/tcp.h"
+#include "network/connectdialog.h"
 #include "camera/camcalibrate.h"
 #include "camera/camsettingsholder.h"
 

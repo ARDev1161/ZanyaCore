@@ -33,7 +33,7 @@ namespace Ui {
     class MainWindow;
 }
 
-class MainWindow : public QMainWindow
+class ZanyaCore : public QMainWindow
 {
     Q_OBJECT
 
@@ -58,10 +58,11 @@ class MainWindow : public QMainWindow
     Joystick *joyThread;
     TCP *tcpThread;
 
-    int LoopTime=50;
+    int loopTime=50;
 
-signals:
-    void timeout();
+public:
+    explicit ZanyaCore(QWidget *parent = 0);
+    ~ZanyaCore();
 
 private slots:
     void calibDialogOpen();
@@ -71,10 +72,7 @@ private slots:
 
     void zanyaHalt();
     void zanyaReboot();
-
-public:
-    explicit MainWindow(QWidget *parent = 0);
-    ~MainWindow();
+    void connectDialogOpen();
 
 private:
     void startCap();
@@ -85,6 +83,8 @@ private:
     void outMat(Mat &toOut);
     void undistortMat(Mat &inMat, Mat &outMat);
 
+signals:
+    void timeout();
 
 };
 

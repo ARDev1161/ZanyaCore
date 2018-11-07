@@ -24,7 +24,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
+        zanyacore.cpp \
         logic/logic.cpp \
         joystick/v_joystick_adapter.cpp \
         joystick/joystickdialog.cpp \
@@ -49,20 +49,20 @@ SOURCES += \
         network/tcp/tcp.cpp \
         network/protobuf/control.pb.cc \
         network/protobuf/sensors.pb.cc \
-        network/ssl/SslServer.cpp \
         camera/camcalibrate.cpp \
         camera/camsettingsholder.cpp \
         camera/calibrator.cpp \
         camera/calibratorworker.cpp \
         threads/session.cpp \
-        threads/worker.cpp
+        threads/worker.cpp \
+    network/connectdialog.cpp
 
 CONFIG += precompile_header
 PRECOMPILED_HEADER = pch.h
 
 HEADERS += \
         pch.h \
-        mainwindow.h \
+        zanyacore.h \
         logic/logic.h \
         joystick/v_joystick_adapter.h \
         joystick/joystickdialog.h \
@@ -87,18 +87,19 @@ HEADERS += \
         network/tcp/tcp.h \
         network/protobuf/control.pb.h \
         network/protobuf/sensors.pb.h \
-        network/ssl/SslServer.h \
         camera/camcalibrate.h \
         camera/camsettingsholder.h \
         camera/calibrator.h \
         camera/calibratorworker.h \
         threads/session.h \
-        threads/worker.h
+        threads/worker.h \
+    network/connectdialog.h
 
 FORMS += \
         mainwindow.ui \
         joystick/joystickdialog.ui \
-        camera/camcalibrate.ui
+        camera/camcalibrate.ui \
+    network/connectdialog.ui
 
 INCLUDEPATH += /usr/local/include/opencv4/
 

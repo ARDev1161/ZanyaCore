@@ -81,7 +81,6 @@
     <addaction name="action_Connect"/>
     <addaction name="separator"/>
     <addaction name="separator"/>
-    <addaction name="action_Move"/>
     <addaction name="separator"/>
     <addaction name="separator"/>
     <addaction name="action_Reboot"/>
