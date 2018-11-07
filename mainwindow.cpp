@@ -87,6 +87,16 @@ void MainWindow::undistortMat(Mat &inMat, Mat &outMat)
         outMat = inMat;
 }
 
+void MainWindow::zanyaHalt()
+{
+    zanyaControl->setFlagHalt(true);
+}
+
+void MainWindow::zanyaReboot()
+{
+    zanyaControl->setFlagRestart(true);
+}
+
 void MainWindow::calibDialogOpen()
 {
     CamCalibrate *calibDialog;
@@ -122,6 +132,10 @@ void MainWindow::fetchJoystickId()
 
 void MainWindow::connMenu()
 {
-    connect(ui->actionCamera, SIGNAL(triggered()), this, SLOT(calibDialogOpen()));
+    // File menu
     connect(ui->action_Joystick, SIGNAL(triggered()), this, SLOT(menuJoystick()));
+    // Zanya menu
+    connect(ui->action_Halt, SIGNAL(triggered()), this, SLOT(zanyaHalt()));
+    connect(ui->action_Reboot, SIGNAL(triggered()), this, SLOT(zanyaReboot()));
+    connect(ui->actionCamera, SIGNAL(triggered()), this, SLOT(calibDialogOpen()));
 }

@@ -43,10 +43,10 @@ SOURCES += \
         sensors/motorencoders.cpp \
         sensors/temperature.cpp \
         sensors/sensors.cpp \
-        network/TCP/tcpcontrol.cpp \
-        network/TCP/tcpsensors.cpp \
-        network/TCP/tcpworker.cpp \
-        network/TCP/tcp.cpp \
+        network/tcp/tcpcontrol.cpp \
+        network/tcp/tcpsensors.cpp \
+        network/tcp/tcpworker.cpp \
+        network/tcp/tcp.cpp \
         network/protobuf/control.pb.cc \
         network/protobuf/sensors.pb.cc \
         network/ssl/SslServer.cpp \
@@ -81,10 +81,10 @@ HEADERS += \
         sensors/motorencoders.h \
         sensors/temperature.h \
         sensors/sensors.h \
-        network/TCP/tcpcontrol.h \
-        network/TCP/tcpsensors.h \
-        network/TCP/tcpworker.h \
-        network/TCP/tcp.h \
+        network/tcp/tcpcontrol.h \
+        network/tcp/tcpsensors.h \
+        network/tcp/tcpworker.h \
+        network/tcp/tcp.h \
         network/protobuf/control.pb.h \
         network/protobuf/sensors.pb.h \
         network/ssl/SslServer.h \

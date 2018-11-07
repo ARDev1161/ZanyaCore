@@ -69,6 +69,9 @@ private slots:
     void menuJoystick();
     void fetchJoystickId();
 
+    void zanyaHalt();
+    void zanyaReboot();
+
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
@@ -76,11 +79,12 @@ public:
 private:
     void startCap();
     void startTimer();
+    void initFields();
+    void connMenu();
     void worker();
     void outMat(Mat &toOut);
-    void connMenu();
     void undistortMat(Mat &inMat, Mat &outMat);
-    void initFields();
+
 
 };
 

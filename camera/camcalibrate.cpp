@@ -53,15 +53,14 @@ void CamCalibrate::getCalibInfo()
 {
         cvtColor(*sourceMat, gray, COLOR_BGR2GRAY);
 
-        bool found = findChessboardCorners(gray, boardSize, imageCorners);
+        bool found = findChessboardCorners(gray, boardSize, imageCorners, CALIB_CB_ADAPTIVE_THRESH | CALIB_CB_NORMALIZE_IMAGE | CALIB_CB_FILTER_QUADS | CALIB_CB_FAST_CHECK);
 
-        if(found )
+        if(found & (pauseForChangePosition > 7))
         {
             cornerSubPix(gray, imageCorners, Size(7, 7), Size(-1, -1), TermCriteria(TermCriteria::EPS | TermCriteria::MAX_ITER, 30, 0.1));
 
             drawChessboardCorners(*sourceMat, camHolder->getImageSize(), imageCorners, found);
 
-            imshow("out", *sourceMat);
             objectPoints.push_back(objectCorners);
             imagePoints.push_back(imageCorners);
 
@@ -74,7 +73,7 @@ void CamCalibrate::getCalibInfo()
 
         pauseForChangePosition++;
         if(successes > 20)
-            this->accept();
+            on_buttonBox_accepted();
 }
 
 void CamCalibrate::frameUpdate()
@@ -101,6 +100,7 @@ void CamCalibrate::on_buttonBox_accepted()
         camCalib = new Calibrator(camHolder);
         camCalib->addThread();
     }
+    this->close();
 }
 
 void CamCalibrate::on_buttonBox_rejected()
