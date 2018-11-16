@@ -67,7 +67,7 @@ public:
 private slots:
     void calibDialogOpen();
     void frameUpdate();
-    void menuJoystick();
+    void joystickDialogOpen();
     void fetchJoystickId();
 
     void zanyaHalt();

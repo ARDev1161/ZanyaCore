@@ -38,7 +38,7 @@ void ZanyaCore::initFields()
 void ZanyaCore::connMenu()
 {
     // File menu
-    connect(ui->action_Joystick, SIGNAL(triggered()), this, SLOT(menuJoystick()));
+    connect(ui->action_Joystick, SIGNAL(triggered()), this, SLOT(joystickDialogOpen()));
     connect(ui->actionE_xit, SIGNAL(triggered(bool)), this, SLOT(close()));
     // Zanya menu
     connect(ui->action_Connect, SIGNAL(triggered()), this, SLOT(connectDialogOpen()));
@@ -111,13 +111,13 @@ void ZanyaCore::zanyaReboot()
 
 void ZanyaCore::connectDialogOpen()
 {
-    ConnectDialog *connDialog;
-    connDialog = new ConnectDialog();
+//    ConnectDialog *connDialog;
+//    connDialog = new ConnectDialog();
 
-    connDialog->exec();
+//    connDialog->exec();
 
-//    tcpThread = new TCP(zanyaControl, zanyaSensors, hostName);
-//    tcpThread->addThread();
+    tcpThread = new TCP(zanyaControl, zanyaSensors, hostName);
+    tcpThread->addThread();
 }
 
 void ZanyaCore::calibDialogOpen()
@@ -133,7 +133,7 @@ void ZanyaCore::calibDialogOpen()
     calibDialog->exec();
 }
 
-void ZanyaCore::menuJoystick()
+void ZanyaCore::joystickDialogOpen()
 {
     joystickDialog->exec();
 }
