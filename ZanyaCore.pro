@@ -8,7 +8,7 @@ QT       += core gui multimedia network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets multimediawidgets
 
-TARGET = Zanya
+TARGET = ZanyaCore
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -55,7 +55,7 @@ SOURCES += \
         camera/calibratorworker.cpp \
         threads/session.cpp \
         threads/worker.cpp \
-    network/connectdialog.cpp
+        network/connectdialog.cpp
 
 CONFIG += precompile_header
 PRECOMPILED_HEADER = pch.h
@@ -93,13 +93,13 @@ HEADERS += \
         camera/calibratorworker.h \
         threads/session.h \
         threads/worker.h \
-    network/connectdialog.h
+        network/connectdialog.h
 
 FORMS += \
         mainwindow.ui \
         joystick/joystickdialog.ui \
         camera/camcalibrate.ui \
-    network/connectdialog.ui
+        network/connectdialog.ui
 
 INCLUDEPATH += /usr/local/include/opencv4/
 
@@ -134,4 +134,4 @@ DISTFILES += \
         data/images/no_picture.jpeg
 
 SUBDIRS += \
-        Zanya.pro
+        ZanyaCore.pro
