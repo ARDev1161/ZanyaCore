@@ -2,6 +2,9 @@
 #define SPEECHDIALOG_H
 
 #include <QDialog>
+#include <QTextToSpeech>
+
+#include "sphinxrecognizer.h"
 
 namespace Ui {
 class SpeechDialog;
@@ -11,12 +14,39 @@ class SpeechDialog : public QDialog
 {
     Q_OBJECT
 
+    Ui::SpeechDialog *ui;
+
+    int* rate;
+    int* pitch;
+    int* volume;
+    bool* started;
+
+    QString engineName;
+    QTextToSpeech * speech;
+    QVector<QVoice> * voices;
+    QVector<QString> * engines;
+    QVector<QString> * listRows;
+    QVector<QVariant> * languages;
+
 public:
     explicit SpeechDialog(QWidget *parent = nullptr);
     ~SpeechDialog();
 
-private:
-    Ui::SpeechDialog *ui;
+public slots:
+    void speak();
+    void stop();
+
+    void setRate(int);
+    void setPitch(int);
+    void setVolume(int volume);
+
+    void stateChanged(QTextToSpeech::State state);
+    void engineSelected(int index);
+    void languageSelected(int language);
+    void voiceSelected(int index);
+
+    void localeChanged(const QLocale &locale);
+
 };
 
 #endif // SPEECHDIALOG_H

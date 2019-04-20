@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui multimedia network
+QT       += core gui multimedia network texttospeech
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets multimediawidgets
 
@@ -22,90 +22,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-SOURCES += \
-        main.cpp \
-        zanyacore.cpp \
-        logic/logic.cpp \
-        joystick/v_joystick_adapter.cpp \
-        joystick/joystickdialog.cpp \
-        joystick/getstatebyjoy.cpp \
-        joystick/joystickidholder.cpp \
-        joystick/joystickstateworker.cpp \
-        joystick/joystick.cpp \
-        control/light.cpp \
-        control/motors.cpp \
-        control/servos.cpp \
-        control/system.cpp \
-        control/vibro.cpp \
-        control/control.cpp \
-        sensors/accelerometer.cpp \
-        sensors/gyroscope.cpp \
-        sensors/motorencoders.cpp \
-        sensors/temperature.cpp \
-        sensors/sensors.cpp \
-        network/tcp/tcpcontrol.cpp \
-        network/tcp/tcpsensors.cpp \
-        network/tcp/tcpworker.cpp \
-        network/tcp/tcp.cpp \
-        network/protobuf/control.pb.cc \
-        network/protobuf/sensors.pb.cc \
-        camera/camcalibrate.cpp \
-        camera/camsettingsholder.cpp \
-        camera/calibrator.cpp \
-        camera/calibratorworker.cpp \
-        threads/session.cpp \
-        threads/worker.cpp \
-        network/connectdialog.cpp
-
-CONFIG += precompile_header
-PRECOMPILED_HEADER = pch.h
-
-HEADERS += \
-        pch.h \
-        zanyacore.h \
-        logic/logic.h \
-        joystick/v_joystick_adapter.h \
-        joystick/joystickdialog.h \
-        joystick/getstatebyjoy.h \
-        joystick/joystickidholder.h \
-        joystick/joystickstateworker.h \
-        joystick/joystick.h \
-        control/light.h \
-        control/motors.h \
-        control/servos.h \
-        control/system.h \
-        control/vibro.h \
-        control/control.h \
-        sensors/accelerometer.h \
-        sensors/gyroscope.h \
-        sensors/motorencoders.h \
-        sensors/temperature.h \
-        sensors/sensors.h \
-        network/tcp/tcpcontrol.h \
-        network/tcp/tcpsensors.h \
-        network/tcp/tcpworker.h \
-        network/tcp/tcp.h \
-        network/protobuf/control.pb.h \
-        network/protobuf/sensors.pb.h \
-        camera/camcalibrate.h \
-        camera/camsettingsholder.h \
-        camera/calibrator.h \
-        camera/calibratorworker.h \
-        threads/session.h \
-        threads/worker.h \
-        network/connectdialog.h
-
-FORMS += \
-        mainwindow.ui \
-        joystick/joystickdialog.ui \
-        camera/camcalibrate.ui \
-        network/connectdialog.ui
-
-INCLUDEPATH += /usr/local/include/opencv4/
+INCLUDEPATH += /usr/include/opencv4/
 
 INCLUDEPATH += /usr/include/SDL/
 
+INCLUDEPATH += /usr/include/pocketsphinx/
+INCLUDEPATH += /usr/include/sphinxbase/
+
 LIBS += -lSDL
+
+LIBS += -lpocketsphinx
+LIBS += -lsphinxbase
 
 LIBS += -L$$LIBS_PATH /
 LIBS += -lprotobuf \
@@ -127,10 +54,112 @@ LIBS += -lprotobuf \
         -lopencv_videoio \
         -lopencv_videostab \
 
+
+
+SOURCES += \
+        main.cpp \
+        zanyacore.cpp \
+#Cameras sources
+        camera/camcalibrate.cpp \
+        camera/camsettingsholder.cpp \
+        camera/calibrator.cpp \
+        camera/calibratorworker.cpp \
+#Joystick sources
+        joystick/joystick.cpp \
+        joystick/v_joystick_adapter.cpp \
+        joystick/joystickdialog.cpp \
+        joystick/getstatebyjoy.cpp \
+        joystick/joystickidholder.cpp \
+        joystick/joystickstateworker.cpp \
+#Control sources
+        control/control.cpp \
+        control/light.cpp \
+        control/motors.cpp \
+        control/servos.cpp \
+        control/system.cpp \
+        control/vibro.cpp \
+#Sensors sources
+        sensors/sensors.cpp \
+        sensors/gyroscope.cpp \
+        sensors/temperature.cpp \
+        sensors/motorencoders.cpp \
+        sensors/accelerometer.cpp \
+#Network sources
+        network/connectdialog.cpp \
+        network/tcp/tcp.cpp \
+        network/tcp/tcpcontrol.cpp \
+        network/tcp/tcpsensors.cpp \
+        network/tcp/tcpworker.cpp \
+        network/protobuf/control.pb.cc \
+        network/protobuf/sensors.pb.cc \
+#Threads sources
+        threads/session.cpp \
+        threads/worker.cpp \
+#Logic sources
+        logic/logic.cpp \
+        logic/speech/sphinxrecognizer.cpp \
+        logic/speech/speechdialog.cpp
+
+CONFIG += precompile_header
+PRECOMPILED_HEADER = pch.h
+
+HEADERS += \
+        pch.h \
+        zanyacore.h \
+#Cameras headers
+        camera/camcalibrate.h \
+        camera/camsettingsholder.h \
+        camera/calibrator.h \
+        camera/calibratorworker.h \
+#Joystick headers
+        joystick/v_joystick_adapter.h \
+        joystick/joystickdialog.h \
+        joystick/getstatebyjoy.h \
+        joystick/joystickidholder.h \
+        joystick/joystickstateworker.h \
+        joystick/joystick.h \
+#Control headers
+        control/light.h \
+        control/motors.h \
+        control/servos.h \
+        control/system.h \
+        control/vibro.h \
+        control/control.h \
+#Sensors headers
+        sensors/sensors.h \
+        sensors/accelerometer.h \
+        sensors/gyroscope.h \
+        sensors/motorencoders.h \
+        sensors/temperature.h \
+#Network headers
+        network/connectdialog.h \
+        network/tcp/tcpcontrol.h \
+        network/tcp/tcpsensors.h \
+        network/tcp/tcpworker.h \
+        network/tcp/tcp.h \
+        network/protobuf/control.pb.h \
+        network/protobuf/sensors.pb.h \
+#Threads headers
+        threads/session.h \
+        threads/worker.h \
+#Logic headers
+        logic/logic.h \
+        logic/speech/prim_type.h \
+        logic/speech/speechdialog.h \
+        logic/speech/sphinxrecognizer.h
+
+FORMS += \
+        camera/camcalibrate.ui \
+        joystick/joystickdialog.ui \
+        network/connectdialog.ui \
+        logic/speech/speechdialog.ui \
+        ZanyaCore.ui
+
 DISTFILES += \
+        README.md \
         network/protobuf/control.proto \
         network/protobuf/sensors.proto \
-        README.md \
+        network/protobuf/rebuild.sh \
         data/images/no_picture.jpeg
 
 SUBDIRS += \

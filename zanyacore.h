@@ -16,8 +16,8 @@
  *  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  */
 
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef ZanyaCore_H
+#define ZanyaCore_H
 
 #undef main
 #include "pch.h"
@@ -30,14 +30,14 @@ using namespace cv;
 using namespace std;
 
 namespace Ui {
-    class MainWindow;
+    class ZanyaCore;
 }
 
 class ZanyaCore : public QMainWindow
 {
     Q_OBJECT
 
-    Ui::MainWindow *ui;
+    Ui::ZanyaCore *ui;
 
     QTimer *tmrTimer;
     QString *hostName;
@@ -48,7 +48,9 @@ class ZanyaCore : public QMainWindow
 
     Control *zanyaControl;
     Sensors *zanyaSensors;
+
     Logic *zanyaLogic;
+    SpeechDialog *speechDialog;
 
     CamSettingsHolder *camHolder;
 
@@ -61,7 +63,7 @@ class ZanyaCore : public QMainWindow
     int loopTime=50;
 
 public:
-    explicit ZanyaCore(QWidget *parent = 0);
+    explicit ZanyaCore(QWidget *parent = nullptr);
     ~ZanyaCore();
 
 private slots:
@@ -69,6 +71,7 @@ private slots:
     void frameUpdate();
     void joystickDialogOpen();
     void fetchJoystickId();
+    void speechDialogOpen();
 
     void zanyaHalt();
     void zanyaReboot();
@@ -88,4 +91,4 @@ signals:
 
 };
 
-#endif // MAINWINDOW_H
+#endif // ZanyaCore_H

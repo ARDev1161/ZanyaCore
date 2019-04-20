@@ -6,58 +6,46 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_sensors_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_sensors_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Accelerometer;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_sensors_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Gyroscope;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_sensors_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Misc;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_sensors_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_MotorEncoders;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_sensors_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Temperature;
-}  // namespace protobuf_sensors_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_sensors_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Accelerometer_sensors_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_sensors_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Gyroscope_sensors_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_sensors_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Misc_sensors_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_sensors_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_MotorEncoders_sensors_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_sensors_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Temperature_sensors_2eproto;
 class ProtobufSensors_AccelerometerDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufSensors_Accelerometer>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufSensors_Accelerometer> _instance;
 } _ProtobufSensors_Accelerometer_default_instance_;
 class ProtobufSensors_GyroscopeDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufSensors_Gyroscope>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufSensors_Gyroscope> _instance;
 } _ProtobufSensors_Gyroscope_default_instance_;
 class ProtobufSensors_MotorEncodersDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufSensors_MotorEncoders>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufSensors_MotorEncoders> _instance;
 } _ProtobufSensors_MotorEncoders_default_instance_;
 class ProtobufSensors_TemperatureDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufSensors_Temperature>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufSensors_Temperature> _instance;
 } _ProtobufSensors_Temperature_default_instance_;
 class ProtobufSensors_MiscDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufSensors_Misc>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufSensors_Misc> _instance;
 } _ProtobufSensors_Misc_default_instance_;
 class ProtobufSensorsDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufSensors>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufSensors> _instance;
 } _ProtobufSensors_default_instance_;
-namespace protobuf_sensors_2eproto {
-static void InitDefaultsProtobufSensors_Accelerometer() {
+static void InitDefaultsProtobufSensors_Accelerometer_sensors_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -68,10 +56,10 @@ static void InitDefaultsProtobufSensors_Accelerometer() {
   ::ProtobufSensors_Accelerometer::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Accelerometer =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufSensors_Accelerometer}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Accelerometer_sensors_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufSensors_Accelerometer_sensors_2eproto}, {}};
 
-static void InitDefaultsProtobufSensors_Gyroscope() {
+static void InitDefaultsProtobufSensors_Gyroscope_sensors_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -82,10 +70,10 @@ static void InitDefaultsProtobufSensors_Gyroscope() {
   ::ProtobufSensors_Gyroscope::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Gyroscope =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufSensors_Gyroscope}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Gyroscope_sensors_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufSensors_Gyroscope_sensors_2eproto}, {}};
 
-static void InitDefaultsProtobufSensors_MotorEncoders() {
+static void InitDefaultsProtobufSensors_MotorEncoders_sensors_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -96,10 +84,10 @@ static void InitDefaultsProtobufSensors_MotorEncoders() {
   ::ProtobufSensors_MotorEncoders::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_MotorEncoders =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufSensors_MotorEncoders}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_MotorEncoders_sensors_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufSensors_MotorEncoders_sensors_2eproto}, {}};
 
-static void InitDefaultsProtobufSensors_Temperature() {
+static void InitDefaultsProtobufSensors_Temperature_sensors_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -110,10 +98,10 @@ static void InitDefaultsProtobufSensors_Temperature() {
   ::ProtobufSensors_Temperature::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Temperature =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufSensors_Temperature}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Temperature_sensors_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufSensors_Temperature_sensors_2eproto}, {}};
 
-static void InitDefaultsProtobufSensors_Misc() {
+static void InitDefaultsProtobufSensors_Misc_sensors_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -124,10 +112,10 @@ static void InitDefaultsProtobufSensors_Misc() {
   ::ProtobufSensors_Misc::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Misc =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufSensors_Misc}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufSensors_Misc_sensors_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufSensors_Misc_sensors_2eproto}, {}};
 
-static void InitDefaultsProtobufSensors() {
+static void InitDefaultsProtobufSensors_sensors_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -138,77 +126,79 @@ static void InitDefaultsProtobufSensors() {
   ::ProtobufSensors::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<5> scc_info_ProtobufSensors =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 5, InitDefaultsProtobufSensors}, {
-      &protobuf_sensors_2eproto::scc_info_ProtobufSensors_Accelerometer.base,
-      &protobuf_sensors_2eproto::scc_info_ProtobufSensors_Gyroscope.base,
-      &protobuf_sensors_2eproto::scc_info_ProtobufSensors_MotorEncoders.base,
-      &protobuf_sensors_2eproto::scc_info_ProtobufSensors_Temperature.base,
-      &protobuf_sensors_2eproto::scc_info_ProtobufSensors_Misc.base,}};
+::google::protobuf::internal::SCCInfo<5> scc_info_ProtobufSensors_sensors_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 5, InitDefaultsProtobufSensors_sensors_2eproto}, {
+      &scc_info_ProtobufSensors_Accelerometer_sensors_2eproto.base,
+      &scc_info_ProtobufSensors_Gyroscope_sensors_2eproto.base,
+      &scc_info_ProtobufSensors_MotorEncoders_sensors_2eproto.base,
+      &scc_info_ProtobufSensors_Temperature_sensors_2eproto.base,
+      &scc_info_ProtobufSensors_Misc_sensors_2eproto.base,}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufSensors_Accelerometer.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufSensors_Gyroscope.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufSensors_MotorEncoders.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufSensors_Temperature.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufSensors_Misc.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufSensors.base);
+void InitDefaults_sensors_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufSensors_Accelerometer_sensors_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufSensors_Gyroscope_sensors_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufSensors_MotorEncoders_sensors_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufSensors_Temperature_sensors_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufSensors_Misc_sensors_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufSensors_sensors_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[6];
+::google::protobuf::Metadata file_level_metadata_sensors_2eproto[6];
+constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_sensors_2eproto = nullptr;
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_sensors_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+const ::google::protobuf::uint32 TableStruct_sensors_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Accelerometer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Accelerometer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Accelerometer, x_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Accelerometer, y_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Accelerometer, z_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Accelerometer, x_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Accelerometer, y_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Accelerometer, z_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Gyroscope, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Gyroscope, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Gyroscope, x_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Gyroscope, y_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Gyroscope, z_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Gyroscope, x_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Gyroscope, y_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Gyroscope, z_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_MotorEncoders, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_MotorEncoders, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_MotorEncoders, langle_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_MotorEncoders, rangle_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_MotorEncoders, langle_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_MotorEncoders, rangle_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Temperature, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Temperature, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Temperature, tempaccelerometer_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Temperature, tempcpu_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Temperature, temppressure_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Temperature, tempaccelerometer_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Temperature, tempcpu_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Temperature, temppressure_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Misc, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Misc, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Misc, gas_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Misc, batteryvoltage_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors_Misc, pressure_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Misc, gas_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Misc, batteryvoltage_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors_Misc, pressure_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors, accelerometer_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors, gyroscope_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors, motorencoders_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors, temperature_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufSensors, misc_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors, accelerometer_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors, gyroscope_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors, motorencoders_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors, temperature_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufSensors, misc_),
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::ProtobufSensors_Accelerometer)},
   { 8, -1, sizeof(::ProtobufSensors_Gyroscope)},
   { 16, -1, sizeof(::ProtobufSensors_MotorEncoders)},
@@ -226,65 +216,53 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::_ProtobufSensors_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "sensors.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_sensors_2eproto = {
+  {}, AddDescriptors_sensors_2eproto, "sensors.proto", schemas,
+  file_default_instances, TableStruct_sensors_2eproto::offsets,
+  file_level_metadata_sensors_2eproto, 6, file_level_enum_descriptors_sensors_2eproto, file_level_service_descriptors_sensors_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_sensors_2eproto[] =
+  "\n\rsensors.proto\"\247\004\n\017ProtobufSensors\0225\n\ra"
+  "ccelerometer\030\001 \001(\0132\036.ProtobufSensors.Acc"
+  "elerometer\022-\n\tgyroscope\030\002 \001(\0132\032.Protobuf"
+  "Sensors.Gyroscope\0225\n\rmotorEncoders\030\003 \001(\013"
+  "2\036.ProtobufSensors.MotorEncoders\0221\n\013temp"
+  "erature\030\004 \001(\0132\034.ProtobufSensors.Temperat"
+  "ure\022#\n\004misc\030\005 \001(\0132\025.ProtobufSensors.Misc"
+  "\0320\n\rAccelerometer\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022"
+  "\t\n\001z\030\003 \001(\002\032,\n\tGyroscope\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030"
+  "\002 \001(\002\022\t\n\001z\030\003 \001(\002\032/\n\rMotorEncoders\022\016\n\006lAn"
+  "gle\030\001 \001(\005\022\016\n\006rAngle\030\002 \001(\005\032O\n\013Temperature"
+  "\022\031\n\021tempAccelerometer\030\001 \001(\005\022\017\n\007tempCPU\030\002"
+  " \001(\005\022\024\n\014tempPressure\030\003 \001(\005\032=\n\004Misc\022\013\n\003ga"
+  "s\030\001 \001(\005\022\026\n\016batteryVoltage\030\002 \001(\005\022\020\n\010press"
+  "ure\030\003 \001(\002b\006proto3"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_sensors_2eproto = {
+  false, InitDefaults_sensors_2eproto, 
+  descriptor_table_protodef_sensors_2eproto,
+  "sensors.proto", &assign_descriptors_table_sensors_2eproto, 577,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 6);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\rsensors.proto\"\247\004\n\017ProtobufSensors\0225\n\ra"
-      "ccelerometer\030\001 \001(\0132\036.ProtobufSensors.Acc"
-      "elerometer\022-\n\tgyroscope\030\002 \001(\0132\032.Protobuf"
-      "Sensors.Gyroscope\0225\n\rmotorEncoders\030\003 \001(\013"
-      "2\036.ProtobufSensors.MotorEncoders\0221\n\013temp"
-      "erature\030\004 \001(\0132\034.ProtobufSensors.Temperat"
-      "ure\022#\n\004misc\030\005 \001(\0132\025.ProtobufSensors.Misc"
-      "\0320\n\rAccelerometer\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022"
-      "\t\n\001z\030\003 \001(\002\032,\n\tGyroscope\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030"
-      "\002 \001(\002\022\t\n\001z\030\003 \001(\002\032/\n\rMotorEncoders\022\016\n\006lAn"
-      "gle\030\001 \001(\005\022\016\n\006rAngle\030\002 \001(\005\032O\n\013Temperature"
-      "\022\031\n\021tempAccelerometer\030\001 \001(\005\022\017\n\007tempCPU\030\002"
-      " \001(\005\022\024\n\014tempPressure\030\003 \001(\005\032=\n\004Misc\022\013\n\003ga"
-      "s\030\001 \001(\005\022\026\n\016batteryVoltage\030\002 \001(\005\022\020\n\010press"
-      "ure\030\003 \001(\002b\006proto3"
+void AddDescriptors_sensors_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 577);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "sensors.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_sensors_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_sensors_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_sensors_2eproto = []() { AddDescriptors_sensors_2eproto(); return true; }();
 
 // ===================================================================
 
 void ProtobufSensors_Accelerometer::InitAsDefaultInstance() {
 }
+class ProtobufSensors_Accelerometer::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProtobufSensors_Accelerometer::kXFieldNumber;
 const int ProtobufSensors_Accelerometer::kYFieldNumber;
@@ -292,15 +270,13 @@ const int ProtobufSensors_Accelerometer::kZFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProtobufSensors_Accelerometer::ProtobufSensors_Accelerometer()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_sensors_2eproto::scc_info_ProtobufSensors_Accelerometer.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ProtobufSensors.Accelerometer)
 }
 ProtobufSensors_Accelerometer::ProtobufSensors_Accelerometer(const ProtobufSensors_Accelerometer& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&x_, &from.x_,
     static_cast<size_t>(reinterpret_cast<char*>(&z_) -
@@ -325,13 +301,8 @@ void ProtobufSensors_Accelerometer::SharedDtor() {
 void ProtobufSensors_Accelerometer::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ProtobufSensors_Accelerometer::descriptor() {
-  ::protobuf_sensors_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_sensors_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ProtobufSensors_Accelerometer& ProtobufSensors_Accelerometer::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_sensors_2eproto::scc_info_ProtobufSensors_Accelerometer.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ProtobufSensors_Accelerometer_sensors_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -348,9 +319,60 @@ void ProtobufSensors_Accelerometer::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ProtobufSensors_Accelerometer::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ProtobufSensors_Accelerometer*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // float x = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 13) goto handle_unusual;
+        msg->set_x(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // float y = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 21) goto handle_unusual;
+        msg->set_y(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // float z = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 29) goto handle_unusual;
+        msg->set_z(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ProtobufSensors_Accelerometer::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ProtobufSensors.Accelerometer)
   for (;;) {
@@ -360,8 +382,7 @@ bool ProtobufSensors_Accelerometer::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // float x = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(13u /* 13 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (13 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
@@ -374,8 +395,7 @@ bool ProtobufSensors_Accelerometer::MergePartialFromCodedStream(
 
       // float y = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(21u /* 21 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (21 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
@@ -388,8 +408,7 @@ bool ProtobufSensors_Accelerometer::MergePartialFromCodedStream(
 
       // float z = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(29u /* 29 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (29 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
@@ -419,6 +438,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ProtobufSensors_Accelerometer::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -441,16 +461,15 @@ void ProtobufSensors_Accelerometer::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->z(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:ProtobufSensors.Accelerometer)
 }
 
 ::google::protobuf::uint8* ProtobufSensors_Accelerometer::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtobufSensors.Accelerometer)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -470,9 +489,9 @@ void ProtobufSensors_Accelerometer::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->z(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtobufSensors.Accelerometer)
   return target;
@@ -482,11 +501,15 @@ size_t ProtobufSensors_Accelerometer::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtobufSensors.Accelerometer)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // float x = 1;
   if (this->x() != 0) {
     total_size += 1 + 4;
@@ -511,9 +534,9 @@ void ProtobufSensors_Accelerometer::MergeFrom(const ::google::protobuf::Message&
 // @@protoc_insertion_point(generalized_merge_from_start:ProtobufSensors.Accelerometer)
   GOOGLE_DCHECK_NE(&from, this);
   const ProtobufSensors_Accelerometer* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProtobufSensors_Accelerometer>(
+      ::google::protobuf::DynamicCastToGenerated<ProtobufSensors_Accelerometer>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:ProtobufSensors.Accelerometer)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -564,15 +587,15 @@ void ProtobufSensors_Accelerometer::Swap(ProtobufSensors_Accelerometer* other) {
 }
 void ProtobufSensors_Accelerometer::InternalSwap(ProtobufSensors_Accelerometer* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(x_, other->x_);
   swap(y_, other->y_);
   swap(z_, other->z_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProtobufSensors_Accelerometer::GetMetadata() const {
-  protobuf_sensors_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_sensors_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_sensors_2eproto);
+  return ::file_level_metadata_sensors_2eproto[kIndexInFileMessages];
 }
 
 
@@ -580,6 +603,10 @@ void ProtobufSensors_Accelerometer::InternalSwap(ProtobufSensors_Accelerometer* 
 
 void ProtobufSensors_Gyroscope::InitAsDefaultInstance() {
 }
+class ProtobufSensors_Gyroscope::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProtobufSensors_Gyroscope::kXFieldNumber;
 const int ProtobufSensors_Gyroscope::kYFieldNumber;
@@ -587,15 +614,13 @@ const int ProtobufSensors_Gyroscope::kZFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProtobufSensors_Gyroscope::ProtobufSensors_Gyroscope()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_sensors_2eproto::scc_info_ProtobufSensors_Gyroscope.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ProtobufSensors.Gyroscope)
 }
 ProtobufSensors_Gyroscope::ProtobufSensors_Gyroscope(const ProtobufSensors_Gyroscope& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&x_, &from.x_,
     static_cast<size_t>(reinterpret_cast<char*>(&z_) -
@@ -620,13 +645,8 @@ void ProtobufSensors_Gyroscope::SharedDtor() {
 void ProtobufSensors_Gyroscope::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ProtobufSensors_Gyroscope::descriptor() {
-  ::protobuf_sensors_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_sensors_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ProtobufSensors_Gyroscope& ProtobufSensors_Gyroscope::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_sensors_2eproto::scc_info_ProtobufSensors_Gyroscope.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ProtobufSensors_Gyroscope_sensors_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -643,9 +663,60 @@ void ProtobufSensors_Gyroscope::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ProtobufSensors_Gyroscope::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ProtobufSensors_Gyroscope*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // float x = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 13) goto handle_unusual;
+        msg->set_x(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // float y = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 21) goto handle_unusual;
+        msg->set_y(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      // float z = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 29) goto handle_unusual;
+        msg->set_z(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ProtobufSensors_Gyroscope::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ProtobufSensors.Gyroscope)
   for (;;) {
@@ -655,8 +726,7 @@ bool ProtobufSensors_Gyroscope::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // float x = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(13u /* 13 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (13 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
@@ -669,8 +739,7 @@ bool ProtobufSensors_Gyroscope::MergePartialFromCodedStream(
 
       // float y = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(21u /* 21 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (21 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
@@ -683,8 +752,7 @@ bool ProtobufSensors_Gyroscope::MergePartialFromCodedStream(
 
       // float z = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(29u /* 29 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (29 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
@@ -714,6 +782,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ProtobufSensors_Gyroscope::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -736,16 +805,15 @@ void ProtobufSensors_Gyroscope::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->z(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:ProtobufSensors.Gyroscope)
 }
 
 ::google::protobuf::uint8* ProtobufSensors_Gyroscope::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtobufSensors.Gyroscope)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -765,9 +833,9 @@ void ProtobufSensors_Gyroscope::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->z(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtobufSensors.Gyroscope)
   return target;
@@ -777,11 +845,15 @@ size_t ProtobufSensors_Gyroscope::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtobufSensors.Gyroscope)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // float x = 1;
   if (this->x() != 0) {
     total_size += 1 + 4;
@@ -806,9 +878,9 @@ void ProtobufSensors_Gyroscope::MergeFrom(const ::google::protobuf::Message& fro
 // @@protoc_insertion_point(generalized_merge_from_start:ProtobufSensors.Gyroscope)
   GOOGLE_DCHECK_NE(&from, this);
   const ProtobufSensors_Gyroscope* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProtobufSensors_Gyroscope>(
+      ::google::protobuf::DynamicCastToGenerated<ProtobufSensors_Gyroscope>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:ProtobufSensors.Gyroscope)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -859,15 +931,15 @@ void ProtobufSensors_Gyroscope::Swap(ProtobufSensors_Gyroscope* other) {
 }
 void ProtobufSensors_Gyroscope::InternalSwap(ProtobufSensors_Gyroscope* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(x_, other->x_);
   swap(y_, other->y_);
   swap(z_, other->z_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProtobufSensors_Gyroscope::GetMetadata() const {
-  protobuf_sensors_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_sensors_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_sensors_2eproto);
+  return ::file_level_metadata_sensors_2eproto[kIndexInFileMessages];
 }
 
 
@@ -875,21 +947,23 @@ void ProtobufSensors_Gyroscope::InternalSwap(ProtobufSensors_Gyroscope* other) {
 
 void ProtobufSensors_MotorEncoders::InitAsDefaultInstance() {
 }
+class ProtobufSensors_MotorEncoders::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProtobufSensors_MotorEncoders::kLAngleFieldNumber;
 const int ProtobufSensors_MotorEncoders::kRAngleFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProtobufSensors_MotorEncoders::ProtobufSensors_MotorEncoders()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_sensors_2eproto::scc_info_ProtobufSensors_MotorEncoders.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ProtobufSensors.MotorEncoders)
 }
 ProtobufSensors_MotorEncoders::ProtobufSensors_MotorEncoders(const ProtobufSensors_MotorEncoders& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&langle_, &from.langle_,
     static_cast<size_t>(reinterpret_cast<char*>(&rangle_) -
@@ -914,13 +988,8 @@ void ProtobufSensors_MotorEncoders::SharedDtor() {
 void ProtobufSensors_MotorEncoders::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ProtobufSensors_MotorEncoders::descriptor() {
-  ::protobuf_sensors_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_sensors_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ProtobufSensors_MotorEncoders& ProtobufSensors_MotorEncoders::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_sensors_2eproto::scc_info_ProtobufSensors_MotorEncoders.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ProtobufSensors_MotorEncoders_sensors_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -937,9 +1006,53 @@ void ProtobufSensors_MotorEncoders::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ProtobufSensors_MotorEncoders::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ProtobufSensors_MotorEncoders*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // int32 lAngle = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_langle(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int32 rAngle = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_rangle(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ProtobufSensors_MotorEncoders::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ProtobufSensors.MotorEncoders)
   for (;;) {
@@ -949,8 +1062,7 @@ bool ProtobufSensors_MotorEncoders::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // int32 lAngle = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -963,8 +1075,7 @@ bool ProtobufSensors_MotorEncoders::MergePartialFromCodedStream(
 
       // int32 rAngle = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -994,6 +1105,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ProtobufSensors_MotorEncoders::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1011,16 +1123,15 @@ void ProtobufSensors_MotorEncoders::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->rangle(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:ProtobufSensors.MotorEncoders)
 }
 
 ::google::protobuf::uint8* ProtobufSensors_MotorEncoders::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtobufSensors.MotorEncoders)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1035,9 +1146,9 @@ void ProtobufSensors_MotorEncoders::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->rangle(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtobufSensors.MotorEncoders)
   return target;
@@ -1047,11 +1158,15 @@ size_t ProtobufSensors_MotorEncoders::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtobufSensors.MotorEncoders)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // int32 lAngle = 1;
   if (this->langle() != 0) {
     total_size += 1 +
@@ -1075,9 +1190,9 @@ void ProtobufSensors_MotorEncoders::MergeFrom(const ::google::protobuf::Message&
 // @@protoc_insertion_point(generalized_merge_from_start:ProtobufSensors.MotorEncoders)
   GOOGLE_DCHECK_NE(&from, this);
   const ProtobufSensors_MotorEncoders* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProtobufSensors_MotorEncoders>(
+      ::google::protobuf::DynamicCastToGenerated<ProtobufSensors_MotorEncoders>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:ProtobufSensors.MotorEncoders)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1125,14 +1240,14 @@ void ProtobufSensors_MotorEncoders::Swap(ProtobufSensors_MotorEncoders* other) {
 }
 void ProtobufSensors_MotorEncoders::InternalSwap(ProtobufSensors_MotorEncoders* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(langle_, other->langle_);
   swap(rangle_, other->rangle_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProtobufSensors_MotorEncoders::GetMetadata() const {
-  protobuf_sensors_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_sensors_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_sensors_2eproto);
+  return ::file_level_metadata_sensors_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1140,6 +1255,10 @@ void ProtobufSensors_MotorEncoders::InternalSwap(ProtobufSensors_MotorEncoders* 
 
 void ProtobufSensors_Temperature::InitAsDefaultInstance() {
 }
+class ProtobufSensors_Temperature::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProtobufSensors_Temperature::kTempAccelerometerFieldNumber;
 const int ProtobufSensors_Temperature::kTempCPUFieldNumber;
@@ -1147,15 +1266,13 @@ const int ProtobufSensors_Temperature::kTempPressureFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProtobufSensors_Temperature::ProtobufSensors_Temperature()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_sensors_2eproto::scc_info_ProtobufSensors_Temperature.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ProtobufSensors.Temperature)
 }
 ProtobufSensors_Temperature::ProtobufSensors_Temperature(const ProtobufSensors_Temperature& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&tempaccelerometer_, &from.tempaccelerometer_,
     static_cast<size_t>(reinterpret_cast<char*>(&temppressure_) -
@@ -1180,13 +1297,8 @@ void ProtobufSensors_Temperature::SharedDtor() {
 void ProtobufSensors_Temperature::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ProtobufSensors_Temperature::descriptor() {
-  ::protobuf_sensors_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_sensors_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ProtobufSensors_Temperature& ProtobufSensors_Temperature::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_sensors_2eproto::scc_info_ProtobufSensors_Temperature.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ProtobufSensors_Temperature_sensors_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1203,9 +1315,60 @@ void ProtobufSensors_Temperature::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ProtobufSensors_Temperature::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ProtobufSensors_Temperature*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // int32 tempAccelerometer = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_tempaccelerometer(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int32 tempCPU = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_tempcpu(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int32 tempPressure = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_temppressure(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ProtobufSensors_Temperature::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ProtobufSensors.Temperature)
   for (;;) {
@@ -1215,8 +1378,7 @@ bool ProtobufSensors_Temperature::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // int32 tempAccelerometer = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1229,8 +1391,7 @@ bool ProtobufSensors_Temperature::MergePartialFromCodedStream(
 
       // int32 tempCPU = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1243,8 +1404,7 @@ bool ProtobufSensors_Temperature::MergePartialFromCodedStream(
 
       // int32 tempPressure = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1274,6 +1434,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ProtobufSensors_Temperature::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1296,16 +1457,15 @@ void ProtobufSensors_Temperature::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->temppressure(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:ProtobufSensors.Temperature)
 }
 
 ::google::protobuf::uint8* ProtobufSensors_Temperature::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtobufSensors.Temperature)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1325,9 +1485,9 @@ void ProtobufSensors_Temperature::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->temppressure(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtobufSensors.Temperature)
   return target;
@@ -1337,11 +1497,15 @@ size_t ProtobufSensors_Temperature::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtobufSensors.Temperature)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // int32 tempAccelerometer = 1;
   if (this->tempaccelerometer() != 0) {
     total_size += 1 +
@@ -1372,9 +1536,9 @@ void ProtobufSensors_Temperature::MergeFrom(const ::google::protobuf::Message& f
 // @@protoc_insertion_point(generalized_merge_from_start:ProtobufSensors.Temperature)
   GOOGLE_DCHECK_NE(&from, this);
   const ProtobufSensors_Temperature* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProtobufSensors_Temperature>(
+      ::google::protobuf::DynamicCastToGenerated<ProtobufSensors_Temperature>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:ProtobufSensors.Temperature)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1425,15 +1589,15 @@ void ProtobufSensors_Temperature::Swap(ProtobufSensors_Temperature* other) {
 }
 void ProtobufSensors_Temperature::InternalSwap(ProtobufSensors_Temperature* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(tempaccelerometer_, other->tempaccelerometer_);
   swap(tempcpu_, other->tempcpu_);
   swap(temppressure_, other->temppressure_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProtobufSensors_Temperature::GetMetadata() const {
-  protobuf_sensors_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_sensors_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_sensors_2eproto);
+  return ::file_level_metadata_sensors_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1441,6 +1605,10 @@ void ProtobufSensors_Temperature::InternalSwap(ProtobufSensors_Temperature* othe
 
 void ProtobufSensors_Misc::InitAsDefaultInstance() {
 }
+class ProtobufSensors_Misc::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProtobufSensors_Misc::kGasFieldNumber;
 const int ProtobufSensors_Misc::kBatteryVoltageFieldNumber;
@@ -1448,15 +1616,13 @@ const int ProtobufSensors_Misc::kPressureFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProtobufSensors_Misc::ProtobufSensors_Misc()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_sensors_2eproto::scc_info_ProtobufSensors_Misc.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ProtobufSensors.Misc)
 }
 ProtobufSensors_Misc::ProtobufSensors_Misc(const ProtobufSensors_Misc& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&gas_, &from.gas_,
     static_cast<size_t>(reinterpret_cast<char*>(&pressure_) -
@@ -1481,13 +1647,8 @@ void ProtobufSensors_Misc::SharedDtor() {
 void ProtobufSensors_Misc::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ProtobufSensors_Misc::descriptor() {
-  ::protobuf_sensors_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_sensors_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ProtobufSensors_Misc& ProtobufSensors_Misc::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_sensors_2eproto::scc_info_ProtobufSensors_Misc.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ProtobufSensors_Misc_sensors_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1504,9 +1665,60 @@ void ProtobufSensors_Misc::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ProtobufSensors_Misc::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ProtobufSensors_Misc*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // int32 gas = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_gas(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int32 batteryVoltage = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_batteryvoltage(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // float pressure = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 29) goto handle_unusual;
+        msg->set_pressure(::google::protobuf::io::UnalignedLoad<float>(ptr));
+        ptr += sizeof(float);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ProtobufSensors_Misc::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ProtobufSensors.Misc)
   for (;;) {
@@ -1516,8 +1728,7 @@ bool ProtobufSensors_Misc::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // int32 gas = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1530,8 +1741,7 @@ bool ProtobufSensors_Misc::MergePartialFromCodedStream(
 
       // int32 batteryVoltage = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1544,8 +1754,7 @@ bool ProtobufSensors_Misc::MergePartialFromCodedStream(
 
       // float pressure = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(29u /* 29 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (29 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
@@ -1575,6 +1784,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ProtobufSensors_Misc::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1597,16 +1807,15 @@ void ProtobufSensors_Misc::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteFloat(3, this->pressure(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:ProtobufSensors.Misc)
 }
 
 ::google::protobuf::uint8* ProtobufSensors_Misc::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtobufSensors.Misc)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1626,9 +1835,9 @@ void ProtobufSensors_Misc::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteFloatToArray(3, this->pressure(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtobufSensors.Misc)
   return target;
@@ -1638,11 +1847,15 @@ size_t ProtobufSensors_Misc::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtobufSensors.Misc)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // int32 gas = 1;
   if (this->gas() != 0) {
     total_size += 1 +
@@ -1671,9 +1884,9 @@ void ProtobufSensors_Misc::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:ProtobufSensors.Misc)
   GOOGLE_DCHECK_NE(&from, this);
   const ProtobufSensors_Misc* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProtobufSensors_Misc>(
+      ::google::protobuf::DynamicCastToGenerated<ProtobufSensors_Misc>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:ProtobufSensors.Misc)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1724,15 +1937,15 @@ void ProtobufSensors_Misc::Swap(ProtobufSensors_Misc* other) {
 }
 void ProtobufSensors_Misc::InternalSwap(ProtobufSensors_Misc* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(gas_, other->gas_);
   swap(batteryvoltage_, other->batteryvoltage_);
   swap(pressure_, other->pressure_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProtobufSensors_Misc::GetMetadata() const {
-  protobuf_sensors_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_sensors_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_sensors_2eproto);
+  return ::file_level_metadata_sensors_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1750,6 +1963,35 @@ void ProtobufSensors::InitAsDefaultInstance() {
   ::_ProtobufSensors_default_instance_._instance.get_mutable()->misc_ = const_cast< ::ProtobufSensors_Misc*>(
       ::ProtobufSensors_Misc::internal_default_instance());
 }
+class ProtobufSensors::HasBitSetters {
+ public:
+  static const ::ProtobufSensors_Accelerometer& accelerometer(const ProtobufSensors* msg);
+  static const ::ProtobufSensors_Gyroscope& gyroscope(const ProtobufSensors* msg);
+  static const ::ProtobufSensors_MotorEncoders& motorencoders(const ProtobufSensors* msg);
+  static const ::ProtobufSensors_Temperature& temperature(const ProtobufSensors* msg);
+  static const ::ProtobufSensors_Misc& misc(const ProtobufSensors* msg);
+};
+
+const ::ProtobufSensors_Accelerometer&
+ProtobufSensors::HasBitSetters::accelerometer(const ProtobufSensors* msg) {
+  return *msg->accelerometer_;
+}
+const ::ProtobufSensors_Gyroscope&
+ProtobufSensors::HasBitSetters::gyroscope(const ProtobufSensors* msg) {
+  return *msg->gyroscope_;
+}
+const ::ProtobufSensors_MotorEncoders&
+ProtobufSensors::HasBitSetters::motorencoders(const ProtobufSensors* msg) {
+  return *msg->motorencoders_;
+}
+const ::ProtobufSensors_Temperature&
+ProtobufSensors::HasBitSetters::temperature(const ProtobufSensors* msg) {
+  return *msg->temperature_;
+}
+const ::ProtobufSensors_Misc&
+ProtobufSensors::HasBitSetters::misc(const ProtobufSensors* msg) {
+  return *msg->misc_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProtobufSensors::kAccelerometerFieldNumber;
 const int ProtobufSensors::kGyroscopeFieldNumber;
@@ -1759,45 +2001,45 @@ const int ProtobufSensors::kMiscFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProtobufSensors::ProtobufSensors()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_sensors_2eproto::scc_info_ProtobufSensors.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ProtobufSensors)
 }
 ProtobufSensors::ProtobufSensors(const ProtobufSensors& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_accelerometer()) {
     accelerometer_ = new ::ProtobufSensors_Accelerometer(*from.accelerometer_);
   } else {
-    accelerometer_ = NULL;
+    accelerometer_ = nullptr;
   }
   if (from.has_gyroscope()) {
     gyroscope_ = new ::ProtobufSensors_Gyroscope(*from.gyroscope_);
   } else {
-    gyroscope_ = NULL;
+    gyroscope_ = nullptr;
   }
   if (from.has_motorencoders()) {
     motorencoders_ = new ::ProtobufSensors_MotorEncoders(*from.motorencoders_);
   } else {
-    motorencoders_ = NULL;
+    motorencoders_ = nullptr;
   }
   if (from.has_temperature()) {
     temperature_ = new ::ProtobufSensors_Temperature(*from.temperature_);
   } else {
-    temperature_ = NULL;
+    temperature_ = nullptr;
   }
   if (from.has_misc()) {
     misc_ = new ::ProtobufSensors_Misc(*from.misc_);
   } else {
-    misc_ = NULL;
+    misc_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:ProtobufSensors)
 }
 
 void ProtobufSensors::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_ProtobufSensors_sensors_2eproto.base);
   ::memset(&accelerometer_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&misc_) -
       reinterpret_cast<char*>(&accelerometer_)) + sizeof(misc_));
@@ -1819,13 +2061,8 @@ void ProtobufSensors::SharedDtor() {
 void ProtobufSensors::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ProtobufSensors::descriptor() {
-  ::protobuf_sensors_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_sensors_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ProtobufSensors& ProtobufSensors::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_sensors_2eproto::scc_info_ProtobufSensors.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ProtobufSensors_sensors_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1836,32 +2073,130 @@ void ProtobufSensors::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == NULL && accelerometer_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && accelerometer_ != nullptr) {
     delete accelerometer_;
   }
-  accelerometer_ = NULL;
-  if (GetArenaNoVirtual() == NULL && gyroscope_ != NULL) {
+  accelerometer_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && gyroscope_ != nullptr) {
     delete gyroscope_;
   }
-  gyroscope_ = NULL;
-  if (GetArenaNoVirtual() == NULL && motorencoders_ != NULL) {
+  gyroscope_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && motorencoders_ != nullptr) {
     delete motorencoders_;
   }
-  motorencoders_ = NULL;
-  if (GetArenaNoVirtual() == NULL && temperature_ != NULL) {
+  motorencoders_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && temperature_ != nullptr) {
     delete temperature_;
   }
-  temperature_ = NULL;
-  if (GetArenaNoVirtual() == NULL && misc_ != NULL) {
+  temperature_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && misc_ != nullptr) {
     delete misc_;
   }
-  misc_ = NULL;
+  misc_ = nullptr;
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ProtobufSensors::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ProtobufSensors*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // .ProtobufSensors.Accelerometer accelerometer = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::ProtobufSensors_Accelerometer::_InternalParse;
+        object = msg->mutable_accelerometer();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // .ProtobufSensors.Gyroscope gyroscope = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::ProtobufSensors_Gyroscope::_InternalParse;
+        object = msg->mutable_gyroscope();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // .ProtobufSensors.MotorEncoders motorEncoders = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::ProtobufSensors_MotorEncoders::_InternalParse;
+        object = msg->mutable_motorencoders();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // .ProtobufSensors.Temperature temperature = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::ProtobufSensors_Temperature::_InternalParse;
+        object = msg->mutable_temperature();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // .ProtobufSensors.Misc misc = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::ProtobufSensors_Misc::_InternalParse;
+        object = msg->mutable_misc();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ProtobufSensors::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ProtobufSensors)
   for (;;) {
@@ -1871,8 +2206,7 @@ bool ProtobufSensors::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // .ProtobufSensors.Accelerometer accelerometer = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_accelerometer()));
         } else {
@@ -1883,8 +2217,7 @@ bool ProtobufSensors::MergePartialFromCodedStream(
 
       // .ProtobufSensors.Gyroscope gyroscope = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_gyroscope()));
         } else {
@@ -1895,8 +2228,7 @@ bool ProtobufSensors::MergePartialFromCodedStream(
 
       // .ProtobufSensors.MotorEncoders motorEncoders = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_motorencoders()));
         } else {
@@ -1907,8 +2239,7 @@ bool ProtobufSensors::MergePartialFromCodedStream(
 
       // .ProtobufSensors.Temperature temperature = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_temperature()));
         } else {
@@ -1919,8 +2250,7 @@ bool ProtobufSensors::MergePartialFromCodedStream(
 
       // .ProtobufSensors.Misc misc = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_misc()));
         } else {
@@ -1948,6 +2278,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ProtobufSensors::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1958,43 +2289,42 @@ void ProtobufSensors::SerializeWithCachedSizes(
   // .ProtobufSensors.Accelerometer accelerometer = 1;
   if (this->has_accelerometer()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_accelerometer(), output);
+      1, HasBitSetters::accelerometer(this), output);
   }
 
   // .ProtobufSensors.Gyroscope gyroscope = 2;
   if (this->has_gyroscope()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_gyroscope(), output);
+      2, HasBitSetters::gyroscope(this), output);
   }
 
   // .ProtobufSensors.MotorEncoders motorEncoders = 3;
   if (this->has_motorencoders()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_motorencoders(), output);
+      3, HasBitSetters::motorencoders(this), output);
   }
 
   // .ProtobufSensors.Temperature temperature = 4;
   if (this->has_temperature()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_temperature(), output);
+      4, HasBitSetters::temperature(this), output);
   }
 
   // .ProtobufSensors.Misc misc = 5;
   if (this->has_misc()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_misc(), output);
+      5, HasBitSetters::misc(this), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:ProtobufSensors)
 }
 
 ::google::protobuf::uint8* ProtobufSensors::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtobufSensors)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2003,40 +2333,40 @@ void ProtobufSensors::SerializeWithCachedSizes(
   if (this->has_accelerometer()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_accelerometer(), deterministic, target);
+        1, HasBitSetters::accelerometer(this), target);
   }
 
   // .ProtobufSensors.Gyroscope gyroscope = 2;
   if (this->has_gyroscope()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_gyroscope(), deterministic, target);
+        2, HasBitSetters::gyroscope(this), target);
   }
 
   // .ProtobufSensors.MotorEncoders motorEncoders = 3;
   if (this->has_motorencoders()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_motorencoders(), deterministic, target);
+        3, HasBitSetters::motorencoders(this), target);
   }
 
   // .ProtobufSensors.Temperature temperature = 4;
   if (this->has_temperature()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_temperature(), deterministic, target);
+        4, HasBitSetters::temperature(this), target);
   }
 
   // .ProtobufSensors.Misc misc = 5;
   if (this->has_misc()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->_internal_misc(), deterministic, target);
+        5, HasBitSetters::misc(this), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtobufSensors)
   return target;
@@ -2046,11 +2376,15 @@ size_t ProtobufSensors::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtobufSensors)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // .ProtobufSensors.Accelerometer accelerometer = 1;
   if (this->has_accelerometer()) {
     total_size += 1 +
@@ -2095,9 +2429,9 @@ void ProtobufSensors::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:ProtobufSensors)
   GOOGLE_DCHECK_NE(&from, this);
   const ProtobufSensors* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProtobufSensors>(
+      ::google::protobuf::DynamicCastToGenerated<ProtobufSensors>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:ProtobufSensors)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2154,42 +2488,43 @@ void ProtobufSensors::Swap(ProtobufSensors* other) {
 }
 void ProtobufSensors::InternalSwap(ProtobufSensors* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(accelerometer_, other->accelerometer_);
   swap(gyroscope_, other->gyroscope_);
   swap(motorencoders_, other->motorencoders_);
   swap(temperature_, other->temperature_);
   swap(misc_, other->misc_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProtobufSensors::GetMetadata() const {
-  protobuf_sensors_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_sensors_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_sensors_2eproto);
+  return ::file_level_metadata_sensors_2eproto[kIndexInFileMessages];
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ProtobufSensors_Accelerometer* Arena::CreateMaybeMessage< ::ProtobufSensors_Accelerometer >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::ProtobufSensors_Accelerometer* Arena::CreateMaybeMessage< ::ProtobufSensors_Accelerometer >(Arena* arena) {
   return Arena::CreateInternal< ::ProtobufSensors_Accelerometer >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ProtobufSensors_Gyroscope* Arena::CreateMaybeMessage< ::ProtobufSensors_Gyroscope >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::ProtobufSensors_Gyroscope* Arena::CreateMaybeMessage< ::ProtobufSensors_Gyroscope >(Arena* arena) {
   return Arena::CreateInternal< ::ProtobufSensors_Gyroscope >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ProtobufSensors_MotorEncoders* Arena::CreateMaybeMessage< ::ProtobufSensors_MotorEncoders >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::ProtobufSensors_MotorEncoders* Arena::CreateMaybeMessage< ::ProtobufSensors_MotorEncoders >(Arena* arena) {
   return Arena::CreateInternal< ::ProtobufSensors_MotorEncoders >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ProtobufSensors_Temperature* Arena::CreateMaybeMessage< ::ProtobufSensors_Temperature >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::ProtobufSensors_Temperature* Arena::CreateMaybeMessage< ::ProtobufSensors_Temperature >(Arena* arena) {
   return Arena::CreateInternal< ::ProtobufSensors_Temperature >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ProtobufSensors_Misc* Arena::CreateMaybeMessage< ::ProtobufSensors_Misc >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::ProtobufSensors_Misc* Arena::CreateMaybeMessage< ::ProtobufSensors_Misc >(Arena* arena) {
   return Arena::CreateInternal< ::ProtobufSensors_Misc >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ProtobufSensors* Arena::CreateMaybeMessage< ::ProtobufSensors >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::ProtobufSensors* Arena::CreateMaybeMessage< ::ProtobufSensors >(Arena* arena) {
   return Arena::CreateInternal< ::ProtobufSensors >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

@@ -6,58 +6,46 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/io/coded_stream.h>
+#include <google/protobuf/extension_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/generated_message_reflection.h>
 #include <google/protobuf/reflection_ops.h>
 #include <google/protobuf/wire_format.h>
-// This is a temporary google only hack
-#ifdef GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-#include "third_party/protobuf/version.h"
-#endif
 // @@protoc_insertion_point(includes)
+#include <google/protobuf/port_def.inc>
 
-namespace protobuf_control_2eproto {
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_control_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Light;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_control_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Motors;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_control_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Servos;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_control_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_System;
-extern PROTOBUF_INTERNAL_EXPORT_protobuf_control_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Vibro;
-}  // namespace protobuf_control_2eproto
+extern PROTOBUF_INTERNAL_EXPORT_control_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Light_control_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_control_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Motors_control_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_control_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Servos_control_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_control_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_System_control_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_control_2eproto ::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Vibro_control_2eproto;
 class ProtobufControl_ServosDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufControl_Servos>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufControl_Servos> _instance;
 } _ProtobufControl_Servos_default_instance_;
 class ProtobufControl_MotorsDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufControl_Motors>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufControl_Motors> _instance;
 } _ProtobufControl_Motors_default_instance_;
 class ProtobufControl_LightDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufControl_Light>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufControl_Light> _instance;
 } _ProtobufControl_Light_default_instance_;
 class ProtobufControl_VibroDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufControl_Vibro>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufControl_Vibro> _instance;
 } _ProtobufControl_Vibro_default_instance_;
 class ProtobufControl_SystemDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufControl_System>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufControl_System> _instance;
 } _ProtobufControl_System_default_instance_;
 class ProtobufControlDefaultTypeInternal {
  public:
-  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufControl>
-      _instance;
+  ::google::protobuf::internal::ExplicitlyConstructed<ProtobufControl> _instance;
 } _ProtobufControl_default_instance_;
-namespace protobuf_control_2eproto {
-static void InitDefaultsProtobufControl_Servos() {
+static void InitDefaultsProtobufControl_Servos_control_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -68,10 +56,10 @@ static void InitDefaultsProtobufControl_Servos() {
   ::ProtobufControl_Servos::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Servos =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufControl_Servos}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Servos_control_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufControl_Servos_control_2eproto}, {}};
 
-static void InitDefaultsProtobufControl_Motors() {
+static void InitDefaultsProtobufControl_Motors_control_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -82,10 +70,10 @@ static void InitDefaultsProtobufControl_Motors() {
   ::ProtobufControl_Motors::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Motors =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufControl_Motors}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Motors_control_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufControl_Motors_control_2eproto}, {}};
 
-static void InitDefaultsProtobufControl_Light() {
+static void InitDefaultsProtobufControl_Light_control_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -96,10 +84,10 @@ static void InitDefaultsProtobufControl_Light() {
   ::ProtobufControl_Light::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Light =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufControl_Light}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Light_control_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufControl_Light_control_2eproto}, {}};
 
-static void InitDefaultsProtobufControl_Vibro() {
+static void InitDefaultsProtobufControl_Vibro_control_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -110,10 +98,10 @@ static void InitDefaultsProtobufControl_Vibro() {
   ::ProtobufControl_Vibro::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Vibro =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufControl_Vibro}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_Vibro_control_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufControl_Vibro_control_2eproto}, {}};
 
-static void InitDefaultsProtobufControl_System() {
+static void InitDefaultsProtobufControl_System_control_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -124,10 +112,10 @@ static void InitDefaultsProtobufControl_System() {
   ::ProtobufControl_System::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_System =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufControl_System}, {}};
+::google::protobuf::internal::SCCInfo<0> scc_info_ProtobufControl_System_control_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 0, InitDefaultsProtobufControl_System_control_2eproto}, {}};
 
-static void InitDefaultsProtobufControl() {
+static void InitDefaultsProtobufControl_control_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
@@ -138,75 +126,77 @@ static void InitDefaultsProtobufControl() {
   ::ProtobufControl::InitAsDefaultInstance();
 }
 
-::google::protobuf::internal::SCCInfo<5> scc_info_ProtobufControl =
-    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 5, InitDefaultsProtobufControl}, {
-      &protobuf_control_2eproto::scc_info_ProtobufControl_Servos.base,
-      &protobuf_control_2eproto::scc_info_ProtobufControl_Motors.base,
-      &protobuf_control_2eproto::scc_info_ProtobufControl_Light.base,
-      &protobuf_control_2eproto::scc_info_ProtobufControl_Vibro.base,
-      &protobuf_control_2eproto::scc_info_ProtobufControl_System.base,}};
+::google::protobuf::internal::SCCInfo<5> scc_info_ProtobufControl_control_2eproto =
+    {{ATOMIC_VAR_INIT(::google::protobuf::internal::SCCInfoBase::kUninitialized), 5, InitDefaultsProtobufControl_control_2eproto}, {
+      &scc_info_ProtobufControl_Servos_control_2eproto.base,
+      &scc_info_ProtobufControl_Motors_control_2eproto.base,
+      &scc_info_ProtobufControl_Light_control_2eproto.base,
+      &scc_info_ProtobufControl_Vibro_control_2eproto.base,
+      &scc_info_ProtobufControl_System_control_2eproto.base,}};
 
-void InitDefaults() {
-  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufControl_Servos.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufControl_Motors.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufControl_Light.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufControl_Vibro.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufControl_System.base);
-  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufControl.base);
+void InitDefaults_control_2eproto() {
+  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufControl_Servos_control_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufControl_Motors_control_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufControl_Light_control_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufControl_Vibro_control_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufControl_System_control_2eproto.base);
+  ::google::protobuf::internal::InitSCC(&scc_info_ProtobufControl_control_2eproto.base);
 }
 
-::google::protobuf::Metadata file_level_metadata[6];
+::google::protobuf::Metadata file_level_metadata_control_2eproto[6];
+constexpr ::google::protobuf::EnumDescriptor const** file_level_enum_descriptors_control_2eproto = nullptr;
+constexpr ::google::protobuf::ServiceDescriptor const** file_level_service_descriptors_control_2eproto = nullptr;
 
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+const ::google::protobuf::uint32 TableStruct_control_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Servos, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Servos, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Servos, xangle_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Servos, yangle_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Servos, xangle_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Servos, yangle_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Motors, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Motors, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Motors, lpower_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Motors, ltime_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Motors, rpower_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Motors, rtime_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Motors, lpower_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Motors, ltime_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Motors, rpower_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Motors, rtime_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Light, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Light, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Light, ledpower_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Light, xenonenable_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Light, ledpower_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Light, xenonenable_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Vibro, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Vibro, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Vibro, power_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_Vibro, time_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Vibro, power_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_Vibro, time_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_System, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_System, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_System, haltflag_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl_System, restartflag_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_System, haltflag_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl_System, restartflag_),
   ~0u,  // no _has_bits_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl, servos_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl, motors_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl, light_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl, vibro_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(::ProtobufControl, system_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl, servos_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl, motors_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl, light_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl, vibro_),
+  PROTOBUF_FIELD_OFFSET(::ProtobufControl, system_),
 };
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
+static const ::google::protobuf::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, -1, sizeof(::ProtobufControl_Servos)},
   { 7, -1, sizeof(::ProtobufControl_Motors)},
   { 16, -1, sizeof(::ProtobufControl_Light)},
@@ -224,78 +214,64 @@ static ::google::protobuf::Message const * const file_default_instances[] = {
   reinterpret_cast<const ::google::protobuf::Message*>(&::_ProtobufControl_default_instance_),
 };
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  AssignDescriptors(
-      "control.proto", schemas, file_default_instances, TableStruct::offsets,
-      file_level_metadata, NULL, NULL);
-}
+::google::protobuf::internal::AssignDescriptorsTable assign_descriptors_table_control_2eproto = {
+  {}, AddDescriptors_control_2eproto, "control.proto", schemas,
+  file_default_instances, TableStruct_control_2eproto::offsets,
+  file_level_metadata_control_2eproto, 6, file_level_enum_descriptors_control_2eproto, file_level_service_descriptors_control_2eproto,
+};
 
-void protobuf_AssignDescriptorsOnce() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, protobuf_AssignDescriptors);
-}
+const char descriptor_table_protodef_control_2eproto[] =
+  "\n\rcontrol.proto\"\323\003\n\017ProtobufControl\022\'\n\006s"
+  "ervos\030\001 \001(\0132\027.ProtobufControl.Servos\022\'\n\006"
+  "motors\030\002 \001(\0132\027.ProtobufControl.Motors\022%\n"
+  "\005light\030\003 \001(\0132\026.ProtobufControl.Light\022%\n\005"
+  "vibro\030\004 \001(\0132\026.ProtobufControl.Vibro\022\'\n\006s"
+  "ystem\030\005 \001(\0132\027.ProtobufControl.System\032(\n\006"
+  "Servos\022\016\n\006xAngle\030\001 \001(\005\022\016\n\006yAngle\030\002 \001(\005\032F"
+  "\n\006Motors\022\016\n\006lPower\030\001 \001(\005\022\r\n\005lTime\030\002 \001(\005\022"
+  "\016\n\006rPower\030\003 \001(\005\022\r\n\005rTime\030\004 \001(\005\032.\n\005Light\022"
+  "\020\n\010ledPower\030\001 \001(\005\022\023\n\013xenonEnable\030\002 \001(\010\032$"
+  "\n\005Vibro\022\r\n\005Power\030\001 \001(\005\022\014\n\004Time\030\002 \001(\005\032/\n\006"
+  "System\022\020\n\010haltFlag\030\001 \001(\010\022\023\n\013restartFlag\030"
+  "\002 \001(\010b\006proto3"
+  ;
+::google::protobuf::internal::DescriptorTable descriptor_table_control_2eproto = {
+  false, InitDefaults_control_2eproto, 
+  descriptor_table_protodef_control_2eproto,
+  "control.proto", &assign_descriptors_table_control_2eproto, 493,
+};
 
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
-void protobuf_RegisterTypes(const ::std::string&) {
-  protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 6);
-}
-
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\rcontrol.proto\"\323\003\n\017ProtobufControl\022\'\n\006s"
-      "ervos\030\001 \001(\0132\027.ProtobufControl.Servos\022\'\n\006"
-      "motors\030\002 \001(\0132\027.ProtobufControl.Motors\022%\n"
-      "\005light\030\003 \001(\0132\026.ProtobufControl.Light\022%\n\005"
-      "vibro\030\004 \001(\0132\026.ProtobufControl.Vibro\022\'\n\006s"
-      "ystem\030\005 \001(\0132\027.ProtobufControl.System\032(\n\006"
-      "Servos\022\016\n\006xAngle\030\001 \001(\005\022\016\n\006yAngle\030\002 \001(\005\032F"
-      "\n\006Motors\022\016\n\006lPower\030\001 \001(\005\022\r\n\005lTime\030\002 \001(\005\022"
-      "\016\n\006rPower\030\003 \001(\005\022\r\n\005rTime\030\004 \001(\005\032.\n\005Light\022"
-      "\020\n\010ledPower\030\001 \001(\005\022\023\n\013xenonEnable\030\002 \001(\010\032$"
-      "\n\005Vibro\022\r\n\005Power\030\001 \001(\005\022\014\n\004Time\030\002 \001(\005\032/\n\006"
-      "System\022\020\n\010haltFlag\030\001 \001(\010\022\023\n\013restartFlag\030"
-      "\002 \001(\010b\006proto3"
+void AddDescriptors_control_2eproto() {
+  static constexpr ::google::protobuf::internal::InitFunc deps[1] =
+  {
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 493);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
-    "control.proto", &protobuf_RegisterTypes);
+ ::google::protobuf::internal::AddDescriptors(&descriptor_table_control_2eproto, deps, 0);
 }
 
-void AddDescriptors() {
-  static ::google::protobuf::internal::once_flag once;
-  ::google::protobuf::internal::call_once(once, AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
-  }
-} static_descriptor_initializer;
-}  // namespace protobuf_control_2eproto
+// Force running AddDescriptors() at dynamic initialization time.
+static bool dynamic_init_dummy_control_2eproto = []() { AddDescriptors_control_2eproto(); return true; }();
 
 // ===================================================================
 
 void ProtobufControl_Servos::InitAsDefaultInstance() {
 }
+class ProtobufControl_Servos::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProtobufControl_Servos::kXAngleFieldNumber;
 const int ProtobufControl_Servos::kYAngleFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProtobufControl_Servos::ProtobufControl_Servos()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_control_2eproto::scc_info_ProtobufControl_Servos.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ProtobufControl.Servos)
 }
 ProtobufControl_Servos::ProtobufControl_Servos(const ProtobufControl_Servos& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&xangle_, &from.xangle_,
     static_cast<size_t>(reinterpret_cast<char*>(&yangle_) -
@@ -320,13 +296,8 @@ void ProtobufControl_Servos::SharedDtor() {
 void ProtobufControl_Servos::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ProtobufControl_Servos::descriptor() {
-  ::protobuf_control_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_control_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ProtobufControl_Servos& ProtobufControl_Servos::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_control_2eproto::scc_info_ProtobufControl_Servos.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ProtobufControl_Servos_control_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -343,9 +314,53 @@ void ProtobufControl_Servos::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ProtobufControl_Servos::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ProtobufControl_Servos*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // int32 xAngle = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_xangle(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int32 yAngle = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_yangle(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ProtobufControl_Servos::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ProtobufControl.Servos)
   for (;;) {
@@ -355,8 +370,7 @@ bool ProtobufControl_Servos::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // int32 xAngle = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -369,8 +383,7 @@ bool ProtobufControl_Servos::MergePartialFromCodedStream(
 
       // int32 yAngle = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -400,6 +413,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ProtobufControl_Servos::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -417,16 +431,15 @@ void ProtobufControl_Servos::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->yangle(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:ProtobufControl.Servos)
 }
 
 ::google::protobuf::uint8* ProtobufControl_Servos::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtobufControl.Servos)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -441,9 +454,9 @@ void ProtobufControl_Servos::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->yangle(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtobufControl.Servos)
   return target;
@@ -453,11 +466,15 @@ size_t ProtobufControl_Servos::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtobufControl.Servos)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // int32 xAngle = 1;
   if (this->xangle() != 0) {
     total_size += 1 +
@@ -481,9 +498,9 @@ void ProtobufControl_Servos::MergeFrom(const ::google::protobuf::Message& from) 
 // @@protoc_insertion_point(generalized_merge_from_start:ProtobufControl.Servos)
   GOOGLE_DCHECK_NE(&from, this);
   const ProtobufControl_Servos* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProtobufControl_Servos>(
+      ::google::protobuf::DynamicCastToGenerated<ProtobufControl_Servos>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:ProtobufControl.Servos)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -531,14 +548,14 @@ void ProtobufControl_Servos::Swap(ProtobufControl_Servos* other) {
 }
 void ProtobufControl_Servos::InternalSwap(ProtobufControl_Servos* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(xangle_, other->xangle_);
   swap(yangle_, other->yangle_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProtobufControl_Servos::GetMetadata() const {
-  protobuf_control_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_control_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_control_2eproto);
+  return ::file_level_metadata_control_2eproto[kIndexInFileMessages];
 }
 
 
@@ -546,6 +563,10 @@ void ProtobufControl_Servos::InternalSwap(ProtobufControl_Servos* other) {
 
 void ProtobufControl_Motors::InitAsDefaultInstance() {
 }
+class ProtobufControl_Motors::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProtobufControl_Motors::kLPowerFieldNumber;
 const int ProtobufControl_Motors::kLTimeFieldNumber;
@@ -554,15 +575,13 @@ const int ProtobufControl_Motors::kRTimeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProtobufControl_Motors::ProtobufControl_Motors()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_control_2eproto::scc_info_ProtobufControl_Motors.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ProtobufControl.Motors)
 }
 ProtobufControl_Motors::ProtobufControl_Motors(const ProtobufControl_Motors& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&lpower_, &from.lpower_,
     static_cast<size_t>(reinterpret_cast<char*>(&rtime_) -
@@ -587,13 +606,8 @@ void ProtobufControl_Motors::SharedDtor() {
 void ProtobufControl_Motors::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ProtobufControl_Motors::descriptor() {
-  ::protobuf_control_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_control_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ProtobufControl_Motors& ProtobufControl_Motors::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_control_2eproto::scc_info_ProtobufControl_Motors.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ProtobufControl_Motors_control_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -610,9 +624,67 @@ void ProtobufControl_Motors::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ProtobufControl_Motors::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ProtobufControl_Motors*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // int32 lPower = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_lpower(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int32 lTime = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_ltime(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int32 rPower = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 24) goto handle_unusual;
+        msg->set_rpower(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int32 rTime = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 32) goto handle_unusual;
+        msg->set_rtime(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ProtobufControl_Motors::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ProtobufControl.Motors)
   for (;;) {
@@ -622,8 +694,7 @@ bool ProtobufControl_Motors::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // int32 lPower = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -636,8 +707,7 @@ bool ProtobufControl_Motors::MergePartialFromCodedStream(
 
       // int32 lTime = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -650,8 +720,7 @@ bool ProtobufControl_Motors::MergePartialFromCodedStream(
 
       // int32 rPower = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (24 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -664,8 +733,7 @@ bool ProtobufControl_Motors::MergePartialFromCodedStream(
 
       // int32 rTime = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (32 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -695,6 +763,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ProtobufControl_Motors::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -722,16 +791,15 @@ void ProtobufControl_Motors::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(4, this->rtime(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:ProtobufControl.Motors)
 }
 
 ::google::protobuf::uint8* ProtobufControl_Motors::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtobufControl.Motors)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -756,9 +824,9 @@ void ProtobufControl_Motors::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(4, this->rtime(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtobufControl.Motors)
   return target;
@@ -768,11 +836,15 @@ size_t ProtobufControl_Motors::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtobufControl.Motors)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // int32 lPower = 1;
   if (this->lpower() != 0) {
     total_size += 1 +
@@ -810,9 +882,9 @@ void ProtobufControl_Motors::MergeFrom(const ::google::protobuf::Message& from) 
 // @@protoc_insertion_point(generalized_merge_from_start:ProtobufControl.Motors)
   GOOGLE_DCHECK_NE(&from, this);
   const ProtobufControl_Motors* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProtobufControl_Motors>(
+      ::google::protobuf::DynamicCastToGenerated<ProtobufControl_Motors>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:ProtobufControl.Motors)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -866,16 +938,16 @@ void ProtobufControl_Motors::Swap(ProtobufControl_Motors* other) {
 }
 void ProtobufControl_Motors::InternalSwap(ProtobufControl_Motors* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(lpower_, other->lpower_);
   swap(ltime_, other->ltime_);
   swap(rpower_, other->rpower_);
   swap(rtime_, other->rtime_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProtobufControl_Motors::GetMetadata() const {
-  protobuf_control_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_control_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_control_2eproto);
+  return ::file_level_metadata_control_2eproto[kIndexInFileMessages];
 }
 
 
@@ -883,21 +955,23 @@ void ProtobufControl_Motors::InternalSwap(ProtobufControl_Motors* other) {
 
 void ProtobufControl_Light::InitAsDefaultInstance() {
 }
+class ProtobufControl_Light::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProtobufControl_Light::kLedPowerFieldNumber;
 const int ProtobufControl_Light::kXenonEnableFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProtobufControl_Light::ProtobufControl_Light()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_control_2eproto::scc_info_ProtobufControl_Light.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ProtobufControl.Light)
 }
 ProtobufControl_Light::ProtobufControl_Light(const ProtobufControl_Light& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&ledpower_, &from.ledpower_,
     static_cast<size_t>(reinterpret_cast<char*>(&xenonenable_) -
@@ -922,13 +996,8 @@ void ProtobufControl_Light::SharedDtor() {
 void ProtobufControl_Light::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ProtobufControl_Light::descriptor() {
-  ::protobuf_control_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_control_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ProtobufControl_Light& ProtobufControl_Light::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_control_2eproto::scc_info_ProtobufControl_Light.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ProtobufControl_Light_control_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -945,9 +1014,53 @@ void ProtobufControl_Light::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ProtobufControl_Light::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ProtobufControl_Light*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // int32 ledPower = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_ledpower(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // bool xenonEnable = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_xenonenable(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ProtobufControl_Light::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ProtobufControl.Light)
   for (;;) {
@@ -957,8 +1070,7 @@ bool ProtobufControl_Light::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // int32 ledPower = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -971,8 +1083,7 @@ bool ProtobufControl_Light::MergePartialFromCodedStream(
 
       // bool xenonEnable = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -1002,6 +1113,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ProtobufControl_Light::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1019,16 +1131,15 @@ void ProtobufControl_Light::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->xenonenable(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:ProtobufControl.Light)
 }
 
 ::google::protobuf::uint8* ProtobufControl_Light::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtobufControl.Light)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1043,9 +1154,9 @@ void ProtobufControl_Light::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->xenonenable(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtobufControl.Light)
   return target;
@@ -1055,11 +1166,15 @@ size_t ProtobufControl_Light::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtobufControl.Light)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // int32 ledPower = 1;
   if (this->ledpower() != 0) {
     total_size += 1 +
@@ -1081,9 +1196,9 @@ void ProtobufControl_Light::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:ProtobufControl.Light)
   GOOGLE_DCHECK_NE(&from, this);
   const ProtobufControl_Light* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProtobufControl_Light>(
+      ::google::protobuf::DynamicCastToGenerated<ProtobufControl_Light>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:ProtobufControl.Light)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1131,14 +1246,14 @@ void ProtobufControl_Light::Swap(ProtobufControl_Light* other) {
 }
 void ProtobufControl_Light::InternalSwap(ProtobufControl_Light* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(ledpower_, other->ledpower_);
   swap(xenonenable_, other->xenonenable_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProtobufControl_Light::GetMetadata() const {
-  protobuf_control_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_control_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_control_2eproto);
+  return ::file_level_metadata_control_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1146,21 +1261,23 @@ void ProtobufControl_Light::InternalSwap(ProtobufControl_Light* other) {
 
 void ProtobufControl_Vibro::InitAsDefaultInstance() {
 }
+class ProtobufControl_Vibro::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProtobufControl_Vibro::kPowerFieldNumber;
 const int ProtobufControl_Vibro::kTimeFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProtobufControl_Vibro::ProtobufControl_Vibro()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_control_2eproto::scc_info_ProtobufControl_Vibro.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ProtobufControl.Vibro)
 }
 ProtobufControl_Vibro::ProtobufControl_Vibro(const ProtobufControl_Vibro& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&power_, &from.power_,
     static_cast<size_t>(reinterpret_cast<char*>(&time_) -
@@ -1185,13 +1302,8 @@ void ProtobufControl_Vibro::SharedDtor() {
 void ProtobufControl_Vibro::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ProtobufControl_Vibro::descriptor() {
-  ::protobuf_control_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_control_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ProtobufControl_Vibro& ProtobufControl_Vibro::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_control_2eproto::scc_info_ProtobufControl_Vibro.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ProtobufControl_Vibro_control_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1208,9 +1320,53 @@ void ProtobufControl_Vibro::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ProtobufControl_Vibro::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ProtobufControl_Vibro*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // int32 Power = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_power(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // int32 Time = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_time(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ProtobufControl_Vibro::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ProtobufControl.Vibro)
   for (;;) {
@@ -1220,8 +1376,7 @@ bool ProtobufControl_Vibro::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // int32 Power = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1234,8 +1389,7 @@ bool ProtobufControl_Vibro::MergePartialFromCodedStream(
 
       // int32 Time = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
@@ -1265,6 +1419,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ProtobufControl_Vibro::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1282,16 +1437,15 @@ void ProtobufControl_Vibro::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->time(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:ProtobufControl.Vibro)
 }
 
 ::google::protobuf::uint8* ProtobufControl_Vibro::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtobufControl.Vibro)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1306,9 +1460,9 @@ void ProtobufControl_Vibro::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->time(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtobufControl.Vibro)
   return target;
@@ -1318,11 +1472,15 @@ size_t ProtobufControl_Vibro::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtobufControl.Vibro)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // int32 Power = 1;
   if (this->power() != 0) {
     total_size += 1 +
@@ -1346,9 +1504,9 @@ void ProtobufControl_Vibro::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:ProtobufControl.Vibro)
   GOOGLE_DCHECK_NE(&from, this);
   const ProtobufControl_Vibro* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProtobufControl_Vibro>(
+      ::google::protobuf::DynamicCastToGenerated<ProtobufControl_Vibro>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:ProtobufControl.Vibro)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1396,14 +1554,14 @@ void ProtobufControl_Vibro::Swap(ProtobufControl_Vibro* other) {
 }
 void ProtobufControl_Vibro::InternalSwap(ProtobufControl_Vibro* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(power_, other->power_);
   swap(time_, other->time_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProtobufControl_Vibro::GetMetadata() const {
-  protobuf_control_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_control_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_control_2eproto);
+  return ::file_level_metadata_control_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1411,21 +1569,23 @@ void ProtobufControl_Vibro::InternalSwap(ProtobufControl_Vibro* other) {
 
 void ProtobufControl_System::InitAsDefaultInstance() {
 }
+class ProtobufControl_System::HasBitSetters {
+ public:
+};
+
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProtobufControl_System::kHaltFlagFieldNumber;
 const int ProtobufControl_System::kRestartFlagFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProtobufControl_System::ProtobufControl_System()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_control_2eproto::scc_info_ProtobufControl_System.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ProtobufControl.System)
 }
 ProtobufControl_System::ProtobufControl_System(const ProtobufControl_System& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&haltflag_, &from.haltflag_,
     static_cast<size_t>(reinterpret_cast<char*>(&restartflag_) -
@@ -1450,13 +1610,8 @@ void ProtobufControl_System::SharedDtor() {
 void ProtobufControl_System::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ProtobufControl_System::descriptor() {
-  ::protobuf_control_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_control_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ProtobufControl_System& ProtobufControl_System::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_control_2eproto::scc_info_ProtobufControl_System.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ProtobufControl_System_control_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1473,9 +1628,53 @@ void ProtobufControl_System::Clear() {
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ProtobufControl_System::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ProtobufControl_System*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // bool haltFlag = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 8) goto handle_unusual;
+        msg->set_haltflag(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      // bool restartFlag = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 16) goto handle_unusual;
+        msg->set_restartflag(::google::protobuf::internal::ReadVarint(&ptr));
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ProtobufControl_System::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ProtobufControl.System)
   for (;;) {
@@ -1485,8 +1684,7 @@ bool ProtobufControl_System::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // bool haltFlag = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (8 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -1499,8 +1697,7 @@ bool ProtobufControl_System::MergePartialFromCodedStream(
 
       // bool restartFlag = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (16 & 0xFF)) {
 
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
@@ -1530,6 +1727,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ProtobufControl_System::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1547,16 +1745,15 @@ void ProtobufControl_System::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteBool(2, this->restartflag(), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:ProtobufControl.System)
 }
 
 ::google::protobuf::uint8* ProtobufControl_System::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtobufControl.System)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1571,9 +1768,9 @@ void ProtobufControl_System::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteBoolToArray(2, this->restartflag(), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtobufControl.System)
   return target;
@@ -1583,11 +1780,15 @@ size_t ProtobufControl_System::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtobufControl.System)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // bool haltFlag = 1;
   if (this->haltflag() != 0) {
     total_size += 1 + 1;
@@ -1607,9 +1808,9 @@ void ProtobufControl_System::MergeFrom(const ::google::protobuf::Message& from) 
 // @@protoc_insertion_point(generalized_merge_from_start:ProtobufControl.System)
   GOOGLE_DCHECK_NE(&from, this);
   const ProtobufControl_System* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProtobufControl_System>(
+      ::google::protobuf::DynamicCastToGenerated<ProtobufControl_System>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:ProtobufControl.System)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -1657,14 +1858,14 @@ void ProtobufControl_System::Swap(ProtobufControl_System* other) {
 }
 void ProtobufControl_System::InternalSwap(ProtobufControl_System* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(haltflag_, other->haltflag_);
   swap(restartflag_, other->restartflag_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProtobufControl_System::GetMetadata() const {
-  protobuf_control_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_control_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_control_2eproto);
+  return ::file_level_metadata_control_2eproto[kIndexInFileMessages];
 }
 
 
@@ -1682,6 +1883,35 @@ void ProtobufControl::InitAsDefaultInstance() {
   ::_ProtobufControl_default_instance_._instance.get_mutable()->system_ = const_cast< ::ProtobufControl_System*>(
       ::ProtobufControl_System::internal_default_instance());
 }
+class ProtobufControl::HasBitSetters {
+ public:
+  static const ::ProtobufControl_Servos& servos(const ProtobufControl* msg);
+  static const ::ProtobufControl_Motors& motors(const ProtobufControl* msg);
+  static const ::ProtobufControl_Light& light(const ProtobufControl* msg);
+  static const ::ProtobufControl_Vibro& vibro(const ProtobufControl* msg);
+  static const ::ProtobufControl_System& system(const ProtobufControl* msg);
+};
+
+const ::ProtobufControl_Servos&
+ProtobufControl::HasBitSetters::servos(const ProtobufControl* msg) {
+  return *msg->servos_;
+}
+const ::ProtobufControl_Motors&
+ProtobufControl::HasBitSetters::motors(const ProtobufControl* msg) {
+  return *msg->motors_;
+}
+const ::ProtobufControl_Light&
+ProtobufControl::HasBitSetters::light(const ProtobufControl* msg) {
+  return *msg->light_;
+}
+const ::ProtobufControl_Vibro&
+ProtobufControl::HasBitSetters::vibro(const ProtobufControl* msg) {
+  return *msg->vibro_;
+}
+const ::ProtobufControl_System&
+ProtobufControl::HasBitSetters::system(const ProtobufControl* msg) {
+  return *msg->system_;
+}
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int ProtobufControl::kServosFieldNumber;
 const int ProtobufControl::kMotorsFieldNumber;
@@ -1691,45 +1921,45 @@ const int ProtobufControl::kSystemFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 ProtobufControl::ProtobufControl()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  ::google::protobuf::internal::InitSCC(
-      &protobuf_control_2eproto::scc_info_ProtobufControl.base);
+  : ::google::protobuf::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
   // @@protoc_insertion_point(constructor:ProtobufControl)
 }
 ProtobufControl::ProtobufControl(const ProtobufControl& from)
   : ::google::protobuf::Message(),
-      _internal_metadata_(NULL) {
+      _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from.has_servos()) {
     servos_ = new ::ProtobufControl_Servos(*from.servos_);
   } else {
-    servos_ = NULL;
+    servos_ = nullptr;
   }
   if (from.has_motors()) {
     motors_ = new ::ProtobufControl_Motors(*from.motors_);
   } else {
-    motors_ = NULL;
+    motors_ = nullptr;
   }
   if (from.has_light()) {
     light_ = new ::ProtobufControl_Light(*from.light_);
   } else {
-    light_ = NULL;
+    light_ = nullptr;
   }
   if (from.has_vibro()) {
     vibro_ = new ::ProtobufControl_Vibro(*from.vibro_);
   } else {
-    vibro_ = NULL;
+    vibro_ = nullptr;
   }
   if (from.has_system()) {
     system_ = new ::ProtobufControl_System(*from.system_);
   } else {
-    system_ = NULL;
+    system_ = nullptr;
   }
   // @@protoc_insertion_point(copy_constructor:ProtobufControl)
 }
 
 void ProtobufControl::SharedCtor() {
+  ::google::protobuf::internal::InitSCC(
+      &scc_info_ProtobufControl_control_2eproto.base);
   ::memset(&servos_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&system_) -
       reinterpret_cast<char*>(&servos_)) + sizeof(system_));
@@ -1751,13 +1981,8 @@ void ProtobufControl::SharedDtor() {
 void ProtobufControl::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const ::google::protobuf::Descriptor* ProtobufControl::descriptor() {
-  ::protobuf_control_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_control_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
-}
-
 const ProtobufControl& ProtobufControl::default_instance() {
-  ::google::protobuf::internal::InitSCC(&protobuf_control_2eproto::scc_info_ProtobufControl.base);
+  ::google::protobuf::internal::InitSCC(&::scc_info_ProtobufControl_control_2eproto.base);
   return *internal_default_instance();
 }
 
@@ -1768,32 +1993,130 @@ void ProtobufControl::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaNoVirtual() == NULL && servos_ != NULL) {
+  if (GetArenaNoVirtual() == nullptr && servos_ != nullptr) {
     delete servos_;
   }
-  servos_ = NULL;
-  if (GetArenaNoVirtual() == NULL && motors_ != NULL) {
+  servos_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && motors_ != nullptr) {
     delete motors_;
   }
-  motors_ = NULL;
-  if (GetArenaNoVirtual() == NULL && light_ != NULL) {
+  motors_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && light_ != nullptr) {
     delete light_;
   }
-  light_ = NULL;
-  if (GetArenaNoVirtual() == NULL && vibro_ != NULL) {
+  light_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && vibro_ != nullptr) {
     delete vibro_;
   }
-  vibro_ = NULL;
-  if (GetArenaNoVirtual() == NULL && system_ != NULL) {
+  vibro_ = nullptr;
+  if (GetArenaNoVirtual() == nullptr && system_ != nullptr) {
     delete system_;
   }
-  system_ = NULL;
+  system_ = nullptr;
   _internal_metadata_.Clear();
 }
 
+#if GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
+const char* ProtobufControl::_InternalParse(const char* begin, const char* end, void* object,
+                  ::google::protobuf::internal::ParseContext* ctx) {
+  auto msg = static_cast<ProtobufControl*>(object);
+  ::google::protobuf::int32 size; (void)size;
+  int depth; (void)depth;
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::internal::ParseFunc parser_till_end; (void)parser_till_end;
+  auto ptr = begin;
+  while (ptr < end) {
+    ptr = ::google::protobuf::io::Parse32(ptr, &tag);
+    GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+    switch (tag >> 3) {
+      // .ProtobufControl.Servos servos = 1;
+      case 1: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 10) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::ProtobufControl_Servos::_InternalParse;
+        object = msg->mutable_servos();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // .ProtobufControl.Motors motors = 2;
+      case 2: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 18) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::ProtobufControl_Motors::_InternalParse;
+        object = msg->mutable_motors();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // .ProtobufControl.Light light = 3;
+      case 3: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 26) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::ProtobufControl_Light::_InternalParse;
+        object = msg->mutable_light();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // .ProtobufControl.Vibro vibro = 4;
+      case 4: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 34) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::ProtobufControl_Vibro::_InternalParse;
+        object = msg->mutable_vibro();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      // .ProtobufControl.System system = 5;
+      case 5: {
+        if (static_cast<::google::protobuf::uint8>(tag) != 42) goto handle_unusual;
+        ptr = ::google::protobuf::io::ReadSize(ptr, &size);
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr);
+        parser_till_end = ::ProtobufControl_System::_InternalParse;
+        object = msg->mutable_system();
+        if (size > end - ptr) goto len_delim_till_end;
+        ptr += size;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ctx->ParseExactRange(
+            {parser_till_end, object}, ptr - size, ptr));
+        break;
+      }
+      default: {
+      handle_unusual:
+        if ((tag & 7) == 4 || tag == 0) {
+          ctx->EndGroup(tag);
+          return ptr;
+        }
+        auto res = UnknownFieldParse(tag, {_InternalParse, msg},
+          ptr, end, msg->_internal_metadata_.mutable_unknown_fields(), ctx);
+        ptr = res.first;
+        GOOGLE_PROTOBUF_PARSER_ASSERT(ptr != nullptr);
+        if (res.second) return ptr;
+      }
+    }  // switch
+  }  // while
+  return ptr;
+len_delim_till_end:
+  return ctx->StoreAndTailCall(ptr, end, {_InternalParse, msg},
+                               {parser_till_end, object}, size);
+}
+#else  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 bool ProtobufControl::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!PROTOBUF_PREDICT_TRUE(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:ProtobufControl)
   for (;;) {
@@ -1803,8 +2126,7 @@ bool ProtobufControl::MergePartialFromCodedStream(
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // .ProtobufControl.Servos servos = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (10 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_servos()));
         } else {
@@ -1815,8 +2137,7 @@ bool ProtobufControl::MergePartialFromCodedStream(
 
       // .ProtobufControl.Motors motors = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (18 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_motors()));
         } else {
@@ -1827,8 +2148,7 @@ bool ProtobufControl::MergePartialFromCodedStream(
 
       // .ProtobufControl.Light light = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (26 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_light()));
         } else {
@@ -1839,8 +2159,7 @@ bool ProtobufControl::MergePartialFromCodedStream(
 
       // .ProtobufControl.Vibro vibro = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (34 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_vibro()));
         } else {
@@ -1851,8 +2170,7 @@ bool ProtobufControl::MergePartialFromCodedStream(
 
       // .ProtobufControl.System system = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (static_cast< ::google::protobuf::uint8>(tag) == (42 & 0xFF)) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessage(
                input, mutable_system()));
         } else {
@@ -1880,6 +2198,7 @@ failure:
   return false;
 #undef DO_
 }
+#endif  // GOOGLE_PROTOBUF_ENABLE_EXPERIMENTAL_PARSER
 
 void ProtobufControl::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
@@ -1890,43 +2209,42 @@ void ProtobufControl::SerializeWithCachedSizes(
   // .ProtobufControl.Servos servos = 1;
   if (this->has_servos()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, this->_internal_servos(), output);
+      1, HasBitSetters::servos(this), output);
   }
 
   // .ProtobufControl.Motors motors = 2;
   if (this->has_motors()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      2, this->_internal_motors(), output);
+      2, HasBitSetters::motors(this), output);
   }
 
   // .ProtobufControl.Light light = 3;
   if (this->has_light()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      3, this->_internal_light(), output);
+      3, HasBitSetters::light(this), output);
   }
 
   // .ProtobufControl.Vibro vibro = 4;
   if (this->has_vibro()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      4, this->_internal_vibro(), output);
+      4, HasBitSetters::vibro(this), output);
   }
 
   // .ProtobufControl.System system = 5;
   if (this->has_system()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      5, this->_internal_system(), output);
+      5, HasBitSetters::system(this), output);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), output);
+        _internal_metadata_.unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:ProtobufControl)
 }
 
 ::google::protobuf::uint8* ProtobufControl::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProtobufControl)
   ::google::protobuf::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1935,40 +2253,40 @@ void ProtobufControl::SerializeWithCachedSizes(
   if (this->has_servos()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        1, this->_internal_servos(), deterministic, target);
+        1, HasBitSetters::servos(this), target);
   }
 
   // .ProtobufControl.Motors motors = 2;
   if (this->has_motors()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        2, this->_internal_motors(), deterministic, target);
+        2, HasBitSetters::motors(this), target);
   }
 
   // .ProtobufControl.Light light = 3;
   if (this->has_light()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        3, this->_internal_light(), deterministic, target);
+        3, HasBitSetters::light(this), target);
   }
 
   // .ProtobufControl.Vibro vibro = 4;
   if (this->has_vibro()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        4, this->_internal_vibro(), deterministic, target);
+        4, HasBitSetters::vibro(this), target);
   }
 
   // .ProtobufControl.System system = 5;
   if (this->has_system()) {
     target = ::google::protobuf::internal::WireFormatLite::
       InternalWriteMessageToArray(
-        5, this->_internal_system(), deterministic, target);
+        5, HasBitSetters::system(this), target);
   }
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()), target);
+        _internal_metadata_.unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProtobufControl)
   return target;
@@ -1978,11 +2296,15 @@ size_t ProtobufControl::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:ProtobufControl)
   size_t total_size = 0;
 
-  if ((_internal_metadata_.have_unknown_fields() &&  ::google::protobuf::internal::GetProto3PreserveUnknownsDefault())) {
+  if (_internal_metadata_.have_unknown_fields()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        (::google::protobuf::internal::GetProto3PreserveUnknownsDefault()   ? _internal_metadata_.unknown_fields()   : _internal_metadata_.default_instance()));
+        _internal_metadata_.unknown_fields());
   }
+  ::google::protobuf::uint32 cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
   // .ProtobufControl.Servos servos = 1;
   if (this->has_servos()) {
     total_size += 1 +
@@ -2027,9 +2349,9 @@ void ProtobufControl::MergeFrom(const ::google::protobuf::Message& from) {
 // @@protoc_insertion_point(generalized_merge_from_start:ProtobufControl)
   GOOGLE_DCHECK_NE(&from, this);
   const ProtobufControl* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const ProtobufControl>(
+      ::google::protobuf::DynamicCastToGenerated<ProtobufControl>(
           &from);
-  if (source == NULL) {
+  if (source == nullptr) {
   // @@protoc_insertion_point(generalized_merge_from_cast_fail:ProtobufControl)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
@@ -2086,42 +2408,43 @@ void ProtobufControl::Swap(ProtobufControl* other) {
 }
 void ProtobufControl::InternalSwap(ProtobufControl* other) {
   using std::swap;
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(servos_, other->servos_);
   swap(motors_, other->motors_);
   swap(light_, other->light_);
   swap(vibro_, other->vibro_);
   swap(system_, other->system_);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
 }
 
 ::google::protobuf::Metadata ProtobufControl::GetMetadata() const {
-  protobuf_control_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_control_2eproto::file_level_metadata[kIndexInFileMessages];
+  ::google::protobuf::internal::AssignDescriptors(&::assign_descriptors_table_control_2eproto);
+  return ::file_level_metadata_control_2eproto[kIndexInFileMessages];
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
 namespace google {
 namespace protobuf {
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ProtobufControl_Servos* Arena::CreateMaybeMessage< ::ProtobufControl_Servos >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::ProtobufControl_Servos* Arena::CreateMaybeMessage< ::ProtobufControl_Servos >(Arena* arena) {
   return Arena::CreateInternal< ::ProtobufControl_Servos >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ProtobufControl_Motors* Arena::CreateMaybeMessage< ::ProtobufControl_Motors >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::ProtobufControl_Motors* Arena::CreateMaybeMessage< ::ProtobufControl_Motors >(Arena* arena) {
   return Arena::CreateInternal< ::ProtobufControl_Motors >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ProtobufControl_Light* Arena::CreateMaybeMessage< ::ProtobufControl_Light >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::ProtobufControl_Light* Arena::CreateMaybeMessage< ::ProtobufControl_Light >(Arena* arena) {
   return Arena::CreateInternal< ::ProtobufControl_Light >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ProtobufControl_Vibro* Arena::CreateMaybeMessage< ::ProtobufControl_Vibro >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::ProtobufControl_Vibro* Arena::CreateMaybeMessage< ::ProtobufControl_Vibro >(Arena* arena) {
   return Arena::CreateInternal< ::ProtobufControl_Vibro >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ProtobufControl_System* Arena::CreateMaybeMessage< ::ProtobufControl_System >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::ProtobufControl_System* Arena::CreateMaybeMessage< ::ProtobufControl_System >(Arena* arena) {
   return Arena::CreateInternal< ::ProtobufControl_System >(arena);
 }
-template<> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE ::ProtobufControl* Arena::CreateMaybeMessage< ::ProtobufControl >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::ProtobufControl* Arena::CreateMaybeMessage< ::ProtobufControl >(Arena* arena) {
   return Arena::CreateInternal< ::ProtobufControl >(arena);
 }
 }  // namespace protobuf
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)
+#include <google/protobuf/port_undef.inc>

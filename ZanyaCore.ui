@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>ZanyaCore</class>
+ <widget class="ZanyaCore" name="ZanyaCore">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -22,10 +22,21 @@
     <height>584</height>
    </size>
   </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
   <property name="windowTitle">
    <string>Zanya Core</string>
   </property>
   <widget class="QWidget" name="centralWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>680</width>
+     <height>540</height>
+    </rect>
+   </property>
    <property name="minimumSize">
     <size>
      <width>680</width>
@@ -57,7 +68,7 @@
      <x>0</x>
      <y>0</y>
      <width>341</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuDevices">
@@ -74,7 +85,7 @@
     </property>
     <widget class="QMenu" name="menuCalibrate">
      <property name="title">
-      <string>Calibrate</string>
+      <string>C&amp;alibrate</string>
      </property>
      <addaction name="actionCamera"/>
     </widget>
@@ -86,11 +97,21 @@
     <addaction name="action_Reboot"/>
     <addaction name="action_Halt"/>
     <addaction name="menuCalibrate"/>
+    <addaction name="action_Speech_dialog"/>
    </widget>
    <addaction name="menuDevices"/>
    <addaction name="menu_Zanya"/>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>3</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
   <action name="actionExit">
    <property name="text">
     <string>Exit</string>
@@ -136,8 +157,21 @@
     <string>E&amp;xit</string>
    </property>
   </action>
+  <action name="action_Speech_dialog">
+   <property name="text">
+    <string>&amp;Speech dialog</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ZanyaCore</class>
+   <extends>QWidget</extends>
+   <header>zanyacore.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

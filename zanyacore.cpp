@@ -1,9 +1,9 @@
 #include "zanyacore.h"
-#include "ui_mainwindow.h"
+#include "ui_ZanyaCore.h"
 
 ZanyaCore::ZanyaCore(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    ui(new Ui::ZanyaCore)
 {
     ui->setupUi(this);
 
@@ -31,7 +31,9 @@ void ZanyaCore::initFields()
 
     idHolder = new JoystickIdHolder();
     joystickDialog = new JoystickDialog(idHolder, this);
-
+    speechDialog = new SpeechDialog(this);
+    
+    connect(joystickDialog, &JoystickDialog::accepted, this, &ZanyaCore::fetchJoystickId);
     connect(joystickDialog, &JoystickDialog::accepted, this, &ZanyaCore::fetchJoystickId);
 }
 
@@ -40,11 +42,15 @@ void ZanyaCore::connMenu()
     // File menu
     connect(ui->action_Joystick, SIGNAL(triggered()), this, SLOT(joystickDialogOpen()));
     connect(ui->actionE_xit, SIGNAL(triggered(bool)), this, SLOT(close()));
+
     // Zanya menu
     connect(ui->action_Connect, SIGNAL(triggered()), this, SLOT(connectDialogOpen()));
     connect(ui->action_Halt, SIGNAL(triggered()), this, SLOT(zanyaHalt()));
     connect(ui->action_Reboot, SIGNAL(triggered()), this, SLOT(zanyaReboot()));
     connect(ui->actionCamera, SIGNAL(triggered()), this, SLOT(calibDialogOpen()));
+
+    // Speech dialog
+    connect(ui->action_Speech_dialog, SIGNAL(triggered()), this, SLOT(speechDialogOpen()));
 }
 
 void ZanyaCore::startTimer()
@@ -87,7 +93,8 @@ void ZanyaCore::worker()
 
 void ZanyaCore::outMat(Mat &toOut)
 {
-    QImage qimgOut((uchar*) toOut.data, toOut.cols, toOut.rows, toOut.step,QImage::Format_RGB888);
+    QImage qimgOut((uchar*) toOut.data, toOut.cols, toOut.rows, toOut.step, QImage::Format_RGB888);
+
     ui->OutLabel->setPixmap(QPixmap::fromImage(qimgOut));
 }
 
@@ -111,11 +118,6 @@ void ZanyaCore::zanyaReboot()
 
 void ZanyaCore::connectDialogOpen()
 {
-//    ConnectDialog *connDialog;
-//    connDialog = new ConnectDialog();
-
-//    connDialog->exec();
-
     tcpThread = new TCP(zanyaControl, zanyaSensors, hostName);
     tcpThread->addThread();
 }
@@ -149,4 +151,9 @@ void ZanyaCore::fetchJoystickId()
     joyThread = new Joystick(id, zanyaControl);
     joyThread->addThread();
 
+}
+
+void ZanyaCore::speechDialogOpen()
+{
+    speechDialog->exec();
 }
