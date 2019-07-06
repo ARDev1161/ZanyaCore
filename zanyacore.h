@@ -42,7 +42,18 @@ class ZanyaCore : public QMainWindow
     QTimer *tmrTimer;
     QString *hostName;
 
+    SpeechDialog *speechDialog;
+    ConnectDialog *connectDialog;
+    JoystickDialog *joystickDialog;
+
+    Joystick *joyThread;
+    TCP *tcpThread;
+
+    CamSettingsHolder *camHolder;
+    JoystickIdHolder *idHolder;
+
     VideoCapture capture;
+
     Mat sourceMat;
     Mat outputMat;
 
@@ -50,21 +61,15 @@ class ZanyaCore : public QMainWindow
     Sensors *zanyaSensors;
 
     Logic *zanyaLogic;
-    SpeechDialog *speechDialog;
 
-    CamSettingsHolder *camHolder;
-
-    JoystickDialog *joystickDialog;
-    JoystickIdHolder *idHolder;
-
-    Joystick *joyThread;
-    TCP *tcpThread;
-
-    int loopTime=50;
+    int loopTime = 50;
 
 public:
     explicit ZanyaCore(QWidget *parent = nullptr);
     ~ZanyaCore();
+
+protected:
+    void resizeEvent(QResizeEvent *e) override;
 
 private slots:
     void calibDialogOpen();

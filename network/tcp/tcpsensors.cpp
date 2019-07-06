@@ -1,5 +1,5 @@
 #include "tcpsensors.h"
-
+// TCP server
 TCPSensors::TCPSensors(Sensors *sensors, QString *hostname): tcpSocket(new QTcpSocket(this))
 {
     hostName = hostname;

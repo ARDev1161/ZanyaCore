@@ -26,7 +26,7 @@ JoystickDialog::~JoystickDialog()
 
 void JoystickDialog::initFields()
 {
-    joyAdapter = new VJoystickAdapter(0);
+    joyAdapter = new VJoystickAdapter(nullptr);
     buttonVector = QVector<bool>(MAX_JOYSTICK_BUTTONS);
 
     buttonVector.fill(false);
@@ -158,7 +158,8 @@ void JoystickDialog::axisSetup(int id, int state)
 
 void JoystickDialog::hatSetup(int id, int state)
 {
-    Q_UNUSED(id);
+    Q_UNUSED(id)
+
     ui->joystickPOV0Label->setText(tr("%1").arg(state));
 }
 
@@ -182,9 +183,9 @@ void JoystickDialog::buttonSetup(int id, bool state)
 
 void JoystickDialog::ballSetup(int id, int stateX, int stateY)
 {
-    Q_UNUSED(id);
-    Q_UNUSED(stateX);
-    Q_UNUSED(stateY);
+    Q_UNUSED(id)
+    Q_UNUSED(stateX)
+    Q_UNUSED(stateY)
 }
 
 void JoystickDialog::on_JoystickDialog_accepted()

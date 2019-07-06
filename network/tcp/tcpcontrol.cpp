@@ -1,5 +1,5 @@
 #include "tcpcontrol.h"
-
+// TCP client
 TCPControl::TCPControl(Control *control, QString *hostname)
 {
     hostName = hostname;

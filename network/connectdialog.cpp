@@ -12,3 +12,8 @@ ConnectDialog::~ConnectDialog()
 {
     delete ui;
 }
+
+void ConnectDialog::on_buttonBox_accepted()
+{
+
+}

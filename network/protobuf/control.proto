@@ -1,8 +1,5 @@
 syntax = "proto3";
 
-
-
-
 message ProtobufControl{
 message Servos{
      int32 xAngle = 1;

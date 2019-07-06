@@ -52,9 +52,7 @@ LIBS += -lprotobuf \
         -lopencv_superres \
         -lopencv_video \
         -lopencv_videoio \
-        -lopencv_videostab \
-
-
+        -lopencv_videostab
 
 SOURCES += \
         main.cpp \
@@ -149,11 +147,11 @@ HEADERS += \
         logic/speech/sphinxrecognizer.h
 
 FORMS += \
+        ZanyaCore.ui \
         camera/camcalibrate.ui \
         joystick/joystickdialog.ui \
         network/connectdialog.ui \
-        logic/speech/speechdialog.ui \
-        ZanyaCore.ui
+        logic/speech/speechdialog.ui
 
 DISTFILES += \
         README.md \

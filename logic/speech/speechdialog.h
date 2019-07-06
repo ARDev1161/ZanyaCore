@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QTextToSpeech>
+#include <QLoggingCategory>
 
 #include "sphinxrecognizer.h"
 
@@ -47,6 +48,8 @@ public slots:
 
     void localeChanged(const QLocale &locale);
 
+private slots:
+    void on_buttonBox_accepted();
 };
 
 #endif // SPEECHDIALOG_H
